@@ -160,6 +160,7 @@ body {
 }
 
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .map iframe {
+  border: none;
   border-radius: 5px;
   max-width: 100%;
 }
@@ -294,6 +295,7 @@ body {
 }
 
 .contactPage .chatroom .chatForm button:hover {
+  background-color: #090e29;
   color: #ff552f;
 }
 

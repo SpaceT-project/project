@@ -28,15 +28,19 @@ const chatItems = document.querySelector('.chatItems');//contain all the chat it
 sendMsgBtn.addEventListener('click', postMsg);
 
 function postMsg(){
-    //First we need to create a new chat item in the chat room to store what user submits
-    let newItem = document.createElement('div');
-    newItem.classList.add('chatItem-user');
-    newItem.innerHTML = '<div class="chatMsg"><p class="userChatMsg"></p></div><div class="userIcon"><i class="fas fa-user fa-2x"></i></div>';
-    chatItems.appendChild(newItem);
-    let userChatMsgs = document.querySelectorAll('.userChatMsg'); //select all message boxes
-    let i = userChatMsgs.length - 1; //get index for the last message box
-    userChatMsgs[i].innerHTML = userInput.value; //add userinput value for the latest created chat item box
-    userInput.value = ''; //clear input field after sending msg
+    if(userInput.value.length != 0) {
+        //First we need to create a new chat item in the chat room to store what user submits
+        let newItem = document.createElement('div');
+        newItem.classList.add('chatItem-user');
+        newItem.innerHTML = '<div class="chatMsg"><p class="userChatMsg"></p></div><div class="userIcon"><i class="fas fa-user fa-2x"></i></div>';
+        chatItems.appendChild(newItem);
+        let userChatMsgs = document.querySelectorAll('.userChatMsg'); //select all message boxes
+        let i = userChatMsgs.length - 1; //get index for the last message box
+        userChatMsgs[i].innerHTML = userInput.value; //add userinput value for the latest created chat item box
+        userInput.value = ''; //clear input field after sending msg
+    } else {
+        alert('Your message is empty, please try again!');
+    }
 }
 
 //Enter to submit message

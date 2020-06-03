@@ -148,6 +148,7 @@
                         padding-bottom: 1rem;
     
                         iframe {
+                            border: none;
                             border-radius: 5px;
                             max-width: 100%;
                         }
@@ -275,6 +276,7 @@
                 z-index: 1;
 
                 &:hover {
+                    background-color: #090e29;
                     color: #ff552f;
                 }
             }
