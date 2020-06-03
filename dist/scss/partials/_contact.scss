@@ -208,7 +208,7 @@
             font-size: 1rem;
             height: 250px;
 
-            .chatItem {
+            .chatItem-spaceT {
                 margin: 0.2rem;
                 padding: 0.5rem;
                 display: grid;
@@ -231,9 +231,24 @@
                     background-color: #ddd;
                 }
             }
+
+            .chatItem-user {
+                
+                @extend .chatItem-spaceT;
+                display: none;
+                
+                &.open {
+                    display: grid;
+                    grid-template-columns: 5fr 1fr;
+                }
+
+                .userIcon {
+                    padding-left: 1rem;
+                }
+            }
         }
 
-        form {
+        .chatForm {
             border-top: 1px solid #ddd;
             border-radius: 5px;
             position: relative;

@@ -107,19 +107,29 @@
             <p> <span class="circle"><i class="fas fa-circle"></i></span> Online</p>
         </div>
         <div class="chatItems">
-            <div class="chatItem">
+            <div class="chatItem-spaceT">
                 <div class="logoCtn">
                     <img class="logo" src="../images/logo-mini.png" alt="logo">
                 </div>
                 <div class="chatMsg">
-                    Hello, welcome to SpaceT. How can we help you?
+                    <p class="spaceTChatMsg">Hello, welcome to SpaceT. How can we help you?</p>
                 </div>
             </div>
+            <div class="chatItem-user">
+                <!--
+                <div class="chatMsg">
+                    <p class="userChatMsg"></p>
+                </div>
+                <div class="userIcon">
+                    <i class="fas fa-user fa-2x"></i>
+                </div>
+                -->
+            </div>
         </div>
-        <form action="https://formspree.io/moqkdwea" method="POST">
-            <input type="text" name="directMsg" placeholder="Enter your message">
-            <button><i class="fas fa-paper-plane"></i></button>
-        </form>
+        <div class="chatForm">
+            <input id="userDirectMsg" name="directMsg" type="text" placeholder="Enter your message">
+            <button class="sendMsg"><i class="fas fa-paper-plane"></i></button>
+        </div>
     </div>
 
     

@@ -222,7 +222,7 @@ body {
   height: 250px;
 }
 
-.contactPage .chatroom .chatItems .chatItem {
+.contactPage .chatroom .chatItems .chatItem-spaceT, .contactPage .chatroom .chatItems .chatItem-user {
   margin: 0.2rem;
   padding: 0.5rem;
   display: -ms-grid;
@@ -231,30 +231,45 @@ body {
       grid-template-columns: 1fr 5fr;
 }
 
-.contactPage .chatroom .chatItems .chatItem .logoCtn {
+.contactPage .chatroom .chatItems .chatItem-spaceT .logoCtn, .contactPage .chatroom .chatItems .chatItem-user .logoCtn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #222020;
 }
 
-.contactPage .chatroom .chatItems .chatItem .logoCtn img {
+.contactPage .chatroom .chatItems .chatItem-spaceT .logoCtn img, .contactPage .chatroom .chatItems .chatItem-user .logoCtn img {
   max-width: 100%;
 }
 
-.contactPage .chatroom .chatItems .chatItem .chatMsg {
+.contactPage .chatroom .chatItems .chatItem-spaceT .chatMsg, .contactPage .chatroom .chatItems .chatItem-user .chatMsg {
   padding: 0.5rem;
   border-radius: 5px;
   background-color: #ddd;
 }
 
-.contactPage .chatroom form {
+.contactPage .chatroom .chatItems .chatItem-user {
+  display: none;
+}
+
+.contactPage .chatroom .chatItems .chatItem-user.open {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 1fr;
+      grid-template-columns: 5fr 1fr;
+}
+
+.contactPage .chatroom .chatItems .chatItem-user .userIcon {
+  padding-left: 1rem;
+}
+
+.contactPage .chatroom .chatForm {
   border-top: 1px solid #ddd;
   border-radius: 5px;
   position: relative;
 }
 
-.contactPage .chatroom form input, .contactPage .chatroom form button {
+.contactPage .chatroom .chatForm input, .contactPage .chatroom .chatForm button {
   padding: 0.5rem;
   height: 3rem;
   border-radius: 0 0 5px 5px;
@@ -262,20 +277,20 @@ body {
   outline: none;
 }
 
-.contactPage .chatroom form input {
+.contactPage .chatroom .chatForm input {
   width: 100%;
   font-size: 1rem;
   padding-right: 4rem;
 }
 
-.contactPage .chatroom form input:focus {
+.contactPage .chatroom .chatForm input:focus {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-box-shadow: 0 0 2px 2px #ddd;
           box-shadow: 0 0 2px 2px #ddd;
 }
 
-.contactPage .chatroom form button {
+.contactPage .chatroom .chatForm button {
   width: 4rem;
   cursor: pointer;
   position: absolute;
@@ -284,7 +299,7 @@ body {
   z-index: 1;
 }
 
-.contactPage .chatroom form button:hover {
+.contactPage .chatroom .chatForm button:hover {
   color: #ff552f;
 }
 
