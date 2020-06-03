@@ -9,59 +9,62 @@ body {
   overflow-x: hidden;
 }
 
-.contactUs {
-  width: 100%;
+.contactPage {
   position: relative;
+}
+
+.contactPage .contactUs {
+  width: 100%;
   margin-top: 3rem;
   padding: 1rem;
   background-color: #222020;
   color: #fff;
 }
 
-.contactUs .logoCtn {
+.contactPage .contactUs .logoCtn {
   width: 100%;
   text-align: center;
 }
 
-.contactUs .logoCtn .logo {
+.contactPage .contactUs .logoCtn .logo {
   width: 50px;
   margin: 0 auto;
   margin-bottom: 0.5rem;
 }
 
-.contactUs .sayHello {
+.contactPage .contactUs .sayHello {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.contactUs .sayHello .p1 {
+.contactPage .contactUs .sayHello .p1 {
   text-transform: uppercase;
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 
-.contactUs .sayHello .p1 .big {
+.contactPage .contactUs .sayHello .p1 .big {
   font-size: 1rem;
 }
 
-.contactUs .sayHello h3 {
+.contactPage .contactUs .sayHello h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.contactUs .sayHello .p2 {
+.contactPage .contactUs .sayHello .p2 {
   font-size: 1rem;
   padding: 0 1rem;
   margin-bottom: 0.5rem;
 }
 
-.contactUs .contactMethods .contactFormCtn {
+.contactPage .contactUs .contactMethods .contactFormCtn {
   margin-bottom: 3rem;
 }
 
-.contactUs .contactMethods .contactFormCtn input, .contactUs .contactMethods .contactFormCtn button, .contactUs .contactMethods .contactFormCtn select, .contactUs .contactMethods .contactFormCtn label, .contactUs .contactMethods .contactFormCtn textarea {
+.contactPage .contactUs .contactMethods .contactFormCtn input, .contactPage .contactUs .contactMethods .contactFormCtn button, .contactPage .contactUs .contactMethods .contactFormCtn select, .contactPage .contactUs .contactMethods .contactFormCtn label, .contactPage .contactUs .contactMethods .contactFormCtn textarea {
   padding: 0.5rem;
   display: block;
   width: 80%;
@@ -72,13 +75,13 @@ body {
   outline: none;
 }
 
-.contactUs .contactMethods .contactFormCtn label {
+.contactPage .contactUs .contactMethods .contactFormCtn label {
   padding-left: 0;
   padding-bottom: 0;
   margin-bottom: 0.5rem;
 }
 
-.contactUs .contactMethods .contactFormCtn input:focus, .contactUs .contactMethods .contactFormCtn textarea:focus {
+.contactPage .contactUs .contactMethods .contactFormCtn input:focus, .contactPage .contactUs .contactMethods .contactFormCtn textarea:focus {
   border-color: #fff;
   -webkit-box-shadow: 0 0 2px 2px #fff;
           box-shadow: 0 0 2px 2px #fff;
@@ -86,11 +89,11 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.contactUs .contactMethods .contactFormCtn button {
+.contactPage .contactUs .contactMethods .contactFormCtn button {
   cursor: pointer;
 }
 
-.contactUs .contactMethods .contactFormCtn button:hover {
+.contactPage .contactUs .contactMethods .contactFormCtn button:hover {
   border-color: #fff;
   -webkit-box-shadow: 0 0 2px 2px #fff;
           box-shadow: 0 0 2px 2px #fff;
@@ -99,24 +102,24 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn {
   width: 80%;
   margin: 0 auto;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn h4 {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn h4 {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem {
   width: 80%;
   margin: 0 auto;
   display: -ms-grid;
@@ -125,44 +128,168 @@ body {
       grid-template-columns: 1fr 9fr;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem p {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem p {
   padding: 0.5rem;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .icon {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .icon {
   width: 40px;
   text-align: center;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .icon:hover {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .icon:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #ff552f;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .emailUs, .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .callUs {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .emailUs, .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .callUs {
   text-decoration: none;
   color: inherit;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .emailUs:hover, .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .callUs:hover {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .emailUs:hover, .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .callUs:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #ff552f;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .map {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .map {
   text-align: center;
   padding-bottom: 1rem;
 }
 
-.contactUs .contactMethods .contactInfo .contactInfoCtn .map iframe {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .map iframe {
   border-radius: 5px;
   max-width: 100%;
 }
 
+.contactPage .directChatIcon {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #222020;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.contactPage .directChatIcon:hover {
+  color: #ff552f;
+}
+
+.contactPage .chatroom {
+  width: 300px;
+  position: fixed;
+  right: 1rem;
+  bottom: 5.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  display: none;
+}
+
+.contactPage .chatroom.open {
+  display: block;
+}
+
+.contactPage .chatroom .chatroomHeader {
+  border-radius: 5px 5px 0 0;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #090e29;
+  color: #fff;
+}
+
+.contactPage .chatroom .chatroomHeader .circle {
+  font-size: 0.8rem;
+  color: #13be13;
+}
+
+.contactPage .chatroom .chatItems {
+  background-color: #fff;
+  font-size: 1rem;
+  height: 250px;
+}
+
+.contactPage .chatroom .chatItems .chatItem {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+}
+
+.contactPage .chatroom .chatItems .chatItem .logoCtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #222020;
+}
+
+.contactPage .chatroom .chatItems .chatItem .logoCtn img {
+  max-width: 100%;
+}
+
+.contactPage .chatroom .chatItems .chatItem .chatMsg {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.contactPage .chatroom form {
+  border-top: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+}
+
+.contactPage .chatroom form input, .contactPage .chatroom form button {
+  padding: 0.5rem;
+  height: 3rem;
+  border-radius: 0 0 5px 5px;
+  border: none;
+  outline: none;
+}
+
+.contactPage .chatroom form input {
+  width: 100%;
+  font-size: 1rem;
+  padding-right: 4rem;
+}
+
+.contactPage .chatroom form input:focus {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 2px 2px #ddd;
+          box-shadow: 0 0 2px 2px #ddd;
+}
+
+.contactPage .chatroom form button {
+  width: 4rem;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.contactPage .chatroom form button:hover {
+  color: #ff552f;
+}
+
 @media (min-width: 768px) {
-  .contactUs .contactMethods {
+  .contactPage .contactUs .contactMethods {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
