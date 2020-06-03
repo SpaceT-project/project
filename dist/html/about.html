@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title> In OrbiT around SpaceT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/partials/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Navigation bar, small screen: menu, open whole page, large screen: bar to the right, with JS-->
+<nav class="navSection">
+    <div class="navCtn">
+        <div class="navMenu">
+            <div class="navBrand">
+                <a href="#">NavBrand</a>
+            </div>
+            <div class="navBurger">
+                <i class="navBurgerBtn fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="navBar">
+            <ul class="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h1 class="text-center mt-4"> In OrbiT around SpaceT</h1>
+
+<section id="vision-row" class="container">
+    <div class="row">
+        <div class="col-sm col-md-7">
+            <h2 class=" pt-4"> Our Vision </h2>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum dicta eaque error, esse
+                inventore
+                itaque maiores modi, mollitia odio quae quam quia quos ratione reprehenderit sed tenetur veritatis
+                voluptates.</p>
+
+        </div>
+        <div class="d-flex col-sm col-md-5">
+            <img id="vision" class="w-50 h-auto m-auto pt-4" src="../images/vision.jpeg" alt="vision">
+        </div>
+    </div>
+</section>
+
+<hr class="mt-5 mb-5">
+
+<section id="historyTabs" class="tabs">
+    <h2 class="ml-5 pt-4 pb-4"> HisTory of SpaceT </h2>
+
+    <div class="d-flex tabLinks justify-content-md-around align-items-sm-baseline">
+        <button id="defaultOpen" class="tabLink active" onclick="openTab('launchDiv', this)"> Launch staging</button>
+        <button id="liftBtn" class="tabLink" onclick="openTab('liftDiv', this)">Lift off</button>
+        <button id="ignitionBtn" class="tabLink" onclick="openTab('ignitionDiv', this)">Jettison & ignition</button>
+        <button id="orbitBtn" class="tabLink" onclick="openTab('orbitDiv', this)"> Orbit</button>
+    </div>
+    <div class="tabContents">
+        <div class="tabContent" id="launchDiv">
+            <h3>Setting up our base...</h3>
+            <p>Corona has become the past, life is back to normal. So what are you waiting for? Let's have a party.</p>
+
+        </div>
+        <div class="tabContent" id="liftDiv">
+            <h3> Taking to the skies</h3>
+        </div>
+
+
+        <div class="tabContent" id="ignitionDiv">
+            <h3> Setting course</h3>
+        </div>
+
+        <div class="tabContent" id="orbitDiv">
+            <h3> In perfect orbit</h3>
+        </div>
+    </div>
+</section>
+
+<hr class="mt-5 mb-5">
+
+<section id="objectivesGrid">
+    <h2 class="ml-5 pt-4 pb-4"> Our ObjecTives </h2>
+
+    <div class="row justify-content-around">
+
+        <div class="circle-image col-sm col-md-4 ">
+            <img class=" ml-auto" src="../images/travel.jpg" alt="space-travel">
+            <div class="hover-box">
+                <div class="hover-text">Go beyond</div>
+            </div>
+        </div>
+        <div class=" circle-image col-sm col-md-4 ">
+            <img class="" src="../images/solar.jpg" alt="solar-system">
+            <div class="hover-box">
+                <div class="hover-text"> Expand your travel map</div>
+            </div>
+        </div>
+        <div class=" circle-image col-sm col-md-4 ">
+            <img class="" src="../images/space.jpeg" alt="stars">
+            <div class="hover-box">
+                <div class="hover-text">Discover the stars</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="mt-5 mb-5">
+
+<section id="crewGrid">
+    <h2 class="ml-5 pt-4 pb-4"> MeeT the Crew </h2>
+    <span>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</span>
+    <div class="row justify-content-around">
+        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
+            <img class="card-img-top img-fluid" src="" alt="teammember">
+            <div class="overlay">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+
+            <div class="member-body card-body">
+                <h5 class="card-title">Dirk Van Goethem</h5>
+                <h6 class="card-subtitle mb-2">Commander in Chief</h6>
+            </div>
+        </div>
+
+        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
+            <img class="card-img-top img-fluid" src="" alt="teammember">
+            <div class="overlay">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="member-body card-body">
+                <h5 class="card-title">Laura Devriendt</h5>
+                <h6 class="card-subtitle mb-2"> Chief of the Astronaut Office</h6>
+            </div>
+        </div>
+
+        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
+            <img class="card-img-top img-fluid" src="" alt="teammember">
+            <div class="overlay">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="member-body card-body">
+                <h5 class="card-title"> Thi Huyen </h5>
+                <h6 class="card-subtitle mb-2"> Interplanetary Mission Specialist</h6>
+            </div>
+        </div>
+
+        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
+            <img class="card-img-top img-fluid" src="" alt="teammember">
+            <div class="overlay">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="member-body card-body">
+                <h5 class="card-title">Jeremia Verhulst</h5>
+                <h6 class="card-subtitle mb-2"> Head Engineer</h6>
+            </div>
+        </div>
+        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
+            <img class="card-img-top img-fluid" src="" alt="teammember">
+            <div class="overlay">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="member-body card-body">
+                <h5 class="card-title">Vinnie Schelfhaut</h5>
+                <h6 class="card-subtitle mb-2">Payload Commander</h6>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="../js/about.js"></script>
+</body>
+</html>
