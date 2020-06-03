@@ -249,12 +249,6 @@ body {
 }
 
 .contactPage .chatroom .chatItems .chatItem-user {
-  display: none;
-}
-
-.contactPage .chatroom .chatItems .chatItem-user.open {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 5fr 1fr;
       grid-template-columns: 5fr 1fr;
 }

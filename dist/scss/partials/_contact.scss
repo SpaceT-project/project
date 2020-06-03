@@ -233,14 +233,8 @@
             }
 
             .chatItem-user {
-                
                 @extend .chatItem-spaceT;
-                display: none;
-                
-                &.open {
-                    display: grid;
-                    grid-template-columns: 5fr 1fr;
-                }
+                grid-template-columns: 5fr 1fr;
 
                 .userIcon {
                     padding-left: 1rem;
