@@ -33,8 +33,9 @@ function postMsg(){
     newItem.classList.add('chatItem-user');
     newItem.innerHTML = '<div class="chatMsg"><p class="userChatMsg"></p></div><div class="userIcon"><i class="fas fa-user fa-2x"></i></div>';
     chatItems.appendChild(newItem);
-    let userChatMsg = document.querySelector('.userChatMsg');
-    userChatMsg.innerHTML = userInput.value;
+    let userChatMsgs = document.querySelectorAll('.userChatMsg'); //select all message boxes
+    let i = userChatMsgs.length - 1; //get index for the last message box
+    userChatMsgs[i].innerHTML = userInput.value; //add userinput value for the latest created chat item box
     userInput.value = ''; //clear input field after sending msg
 }
 
