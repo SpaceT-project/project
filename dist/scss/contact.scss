@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@import "partials/contact";
+
+
+//For navbar
+//For smartphone
+
+.navSection {
+    padding: 0 1rem;
+
+    .navMenu {
+        position: relative; //to set the position for navBurger as absolute
+    }
+
+    .navBrand a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .navBurger {
+        font-size: 1.2rem; //make the burger bigger
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .navBar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        
+        &.open {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(73, 80, 87, 0.98);
+        }
+        
+        .nav>li {
+            list-style-type: none;
+            text-align: center;
+            padding: 0.5rem 0;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                font-size: 1.5rem;
+                transition: color 0.3s ease-in-out;
+
+                &.active {
+                    color: #fd7e14;
+                }
+
+                &:hover {
+                    color: #fd7e14;
+                }
+            }
+        }
+    }
+}
+
+//for screen larger than smartphone
+@media (min-width: 576px) {
+    .navSection {
+        
+        .navBurger {
+            display: none;
+        }
+
+        .navCtn {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .navBrand {
+            padding: 0.5rem 0; //same as .nav>li
+        }
+
+        .navBar {
+            text-align: right;
+            display: inline-block;
+            position: relative;
+            height: auto;
+            width: 100%;
+
+            .nav>li {
+                display: inline-block;
+                
+                a {
+                    font-size: 1rem;
+                    color: black;
+                    padding: 0 0.2rem;
+                }
+            }
+        }
+    }
+}

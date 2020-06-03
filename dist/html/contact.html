@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <script src="https://kit.fontawesome.com/2e0a884014.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/contact.min.css">
+</head>
+<body>
+<main>
+    <!--Navigation bar, small screen: menu, open whole page, large screen: bar to the right, with JS-->
+    <nav class="navSection">
+        <div class="navCtn">
+            <div class="navMenu">
+                <div class="navBrand">
+                    <a href="#">NavBrand</a>
+                </div>
+                <div class="navBurger">
+                    <i class="navBurgerBtn fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="navBar">
+                <ul class="nav">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contactUs">
+        <div class="logoCtn">
+            <img class="logo" src="../images/logo.png" alt="logo">
+        </div>
+        <div class="sayHello">
+            <p class="p1">Contact Space<span class="big">T</span></p>
+            <h3>Got a question?</h4>
+            <p class="p2">Thank you for your interest in learning more about SpaceT.</p>
+            <p class="p2">Feel free to contact us by filling the form below if you have any question.</p>
+        </div>
+        <div class="contactMethods">
+            <!--Contain two main parts, each part will be like: on phone - img as background, big screen, img to the right/left-->
+            <div class="contactFormCtn">
+                <form id="contactForm" action="https://formspree.io/moqkdwea" method="post" enctype="multipart/form-data" name="emailForm">
+                    <input type="text" name="firstName" value="" placeholder="First Name">
+                    <input type="text" name="lastName" value="" placeholder="Last Name">
+                    <input type="email" name="lastName" value="" placeholder="Your email address">
+                    <label for="packages">Which packages are you interested in?</label>
+                    <select id="packages" name="packages">
+                        <option value="packages">Choose a package</option>
+                        <option value="package1">Package1</option>
+                        <option value="package2">Package2</option>
+                        <option value="package3">Package3</option>
+                        <option value="package4">Package4</option>
+                    </select> 
+                    <label for="natureInterest">What is the nature of your interest?</label>
+                    <select id="natureInterest" name="packages">
+                        <option value="reasons">Choose an option</option>
+                        <option value="reason1">I would like to make a reservation</option>
+                        <option value="reason2">I have a specific question</option>
+                        <option value="reason3">Send me an electronic brochure</option>
+                        <option value="reason4">Others</option>
+                    </select> 
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                    <button type="submit" name="submit">Send</button>
+                </form>
+            </div>
+            <div class="contactInfo">
+                <div class="contactInfoCtn">
+                    <h4>How to find SpaceT</h4>
+                    <div class="infoItems">
+                        <div class="infoItem">
+                            <p class="icon"><i class="fas fa-map-marker-alt"></i></p>
+                            <p class="address">This is the address. This is the address. This is the address.</p>
+                        </div>
+                        <div class="infoItem">
+                            <p class="icon"><i class="fas fa-envelope"></i></p>
+                            <p class="email"><a class="emailUs" href="mailto: example@example.com">example@example.com</a></p>
+                        </div>
+                        <div class="infoItem">
+                            <p class="icon"><i class="fas fa-phone-alt"></i></p>
+                            <p class="phone"><a class="callUs" href="tel:+32485123456">(+32) 0485 123 456</a></p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d319885.0656607863!2d4.141289380560442!3d51.217195239601004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f703e7404c69%3A0x270b07bbe1f68aa6!2sAntwerpen-Centraal!5e0!3m2!1snl!2sbe!4v1590755875122!5m2!1snl!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="../js/navbar.js"></script>
+</body>
+</html>

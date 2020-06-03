@@ -1,0 +1,164 @@
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+
+.contactUs {
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #222020;
+    color: #fff;
+
+    .logoCtn {
+        width: 100%;
+        text-align: center;
+        
+        .logo {
+            width: 50px;
+            margin: 0 auto;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    
+
+    .sayHello {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        .p1 {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+
+            .big {
+                font-size: 1rem;
+            }
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .p2 {
+            font-size: 1rem;
+            padding: 0 1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .contactMethods {
+        .contactFormCtn {
+            margin-bottom: 3rem;
+
+            input, button, select, label, textarea {
+                padding: 0.5rem;
+                display: block;
+                width: 80%;
+                border-radius: 5px;
+                font-size: 1rem;
+                margin: 0 auto 1rem auto;
+                border: 1px solid #222020;
+                outline: none;
+            }
+    
+            label {
+                padding-left: 0;
+                padding-bottom: 0;
+                margin-bottom: 0.5rem;
+            }
+            
+            //On focus or hover
+            input:focus, textarea:focus {
+                border-color: #fff;
+                box-shadow: 0 0 2px 2px #fff;
+                @include transition-ease();
+            }
+
+            button {
+                cursor: pointer;
+
+                &:hover {
+                    border-color: #fff;
+                    box-shadow: 0 0 2px 2px #fff;
+                    color: #ff552f;
+                    @include transition-ease();
+                }
+            }
+        }
+
+        .contactInfo {
+            .contactInfoCtn {
+                width: 80%;
+                margin: 0 auto;
+
+                h4 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+
+                .infoItems {
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-bottom: 1rem;
+
+                    .infoItem { 
+                        width: 80%;
+                        margin: 0 auto;
+                        display: grid;
+                        grid-template-columns: 1fr 9fr;
+
+                        p {
+                            padding: 0.5rem;
+                        }
+
+                        .icon {
+                            width: 40px;
+                            text-align: center;
+
+                            &:hover {
+                                @include transition-ease();
+                                color: #ff552f;
+                            }
+                        }
+
+                        .emailUs, .callUs {
+                            text-decoration: none;
+                            color: inherit;
+
+                            &:hover {
+                                @include transition-ease();
+                                color: #ff552f;
+                            }
+                        }
+                    }
+                }
+
+                .map {
+                    text-align: center;
+                    padding-bottom: 1rem;
+
+                    iframe {
+                        border-radius: 5px;
+                        max-width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contactUs {
+        .contactMethods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
