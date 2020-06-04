@@ -1,0 +1,30 @@
+.carrousel-packages-preview{
+
+
+
+   h2{
+        font-family: "Typodermic"; 
+        font-weight: 900;
+        color:#fff;
+
+
+    }
+
+    img{
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+    }
+
+
+    @media screen and (max-width:468px) {
+        h2{
+            font-size: 1.3rem;
+        }   
+    }
+}
+
+
+
+
+
