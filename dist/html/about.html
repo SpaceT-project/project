@@ -40,24 +40,23 @@
     <div class="row">
         <div class="col-sm col-md-7">
             <h2 class=" pt-4"> Our Vision </h2>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum dicta eaque error, esse
-                inventore
-                itaque maiores modi, mollitia odio quae quam quia quos ratione reprehenderit sed tenetur veritatis
-                voluptates.</p>
-
+            <p class="text-justify"> Centuries ago, humanity set sail past the Seven Seas only to other worlds of
+                endless wonder.
+                With every nation on earth setting their sights on the stars, the people should not be left behind.
+            </p>
         </div>
-        <div class="d-flex col-sm col-md-5">
+        <div class="d-flex col-sm col-md-5 ">
             <img id="vision" class="w-50 h-auto m-auto pt-4" src="../images/vision.jpeg" alt="vision">
         </div>
     </div>
 </section>
 
-<hr class="mt-5 mb-5">
+<hr class="mt-5 mb-3">
 
 <section id="historyTabs" class="tabs">
     <h2 class="ml-5 pt-4 pb-4"> HisTory of SpaceT </h2>
 
-    <div class="d-flex tabLinks justify-content-md-around align-items-sm-baseline">
+    <div class="d-flex row tabLinks justify-content-md-around align-content-sm-baseline">
         <button id="defaultOpen" class="tabLink active" onclick="openTab('launchDiv', this)"> Launch staging</button>
         <button id="liftBtn" class="tabLink" onclick="openTab('liftDiv', this)">Lift off</button>
         <button id="ignitionBtn" class="tabLink" onclick="openTab('ignitionDiv', this)">Jettison & ignition</button>
@@ -66,16 +65,23 @@
     <div class="tabContents">
         <div class="tabContent" id="launchDiv">
             <h3>Setting up our base...</h3>
-            <p>Corona has become the past, life is back to normal. So what are you waiting for? Let's have a party.</p>
+            <p>In the year 2020, a deadly virus held a strong grip on our planet. Travelling was never going to be the
+                same until a vaccine
+                was created, which nobody could tell when it would be finished. And while most went to look for
+                sanctuaries within their own countries, we focused on laying the foundation for our first Star Port.
 
         </div>
         <div class="tabContent" id="liftDiv">
             <h3> Taking to the skies</h3>
+            <p>After 3 years of hard work, our Commander in Chief Dirk Van Goethem led the first voyage to the moon.
+                With a crew of 5 cadets and a lucky few passengers, they arrived on the barren landscape of our natural
+                satellite, at a stone throw from our Base Lunar - X Æ A-12. Two weeks later, they successfully engaged thrusters homebound, where they arrived in little under 2 days time.</p>
         </div>
 
 
         <div class="tabContent" id="ignitionDiv">
             <h3> Setting course</h3>
+            <p>Not long after our first mission, we opened up to the public for enlisting and ...</p>
         </div>
 
         <div class="tabContent" id="orbitDiv">
@@ -84,20 +90,20 @@
     </div>
 </section>
 
-<hr class="mt-5 mb-5">
+<hr class="mt-5 mb-3">
 
 <section id="objectivesGrid">
     <h2 class="ml-5 pt-4 pb-4"> Our ObjecTives </h2>
 
     <div class="row justify-content-around">
 
-        <div class="circle-image col-sm col-md-4 ">
+        <div class="circle-image col-sm col-md-4">
             <img class=" ml-auto" src="../images/travel.jpg" alt="space-travel">
             <div class="hover-box">
-                <div class="hover-text">Go beyond</div>
+                <div class="hover-text text-center">Go beyond</div>
             </div>
         </div>
-        <div class=" circle-image col-sm col-md-4 ">
+        <div class=" circle-image col-sm col-md-4">
             <img class="" src="../images/solar.jpg" alt="solar-system">
             <div class="hover-box">
                 <div class="hover-text"> Expand your travel map</div>
@@ -106,89 +112,95 @@
         <div class=" circle-image col-sm col-md-4 ">
             <img class="" src="../images/space.jpeg" alt="stars">
             <div class="hover-box">
-                <div class="hover-text">Discover the stars</div>
+                <div class="hover-text ">Discover the stars</div>
             </div>
         </div>
     </div>
 </section>
 
-<hr class="mt-5 mb-5">
+<hr class="mt-5 mb-3">
 
-<section id="crewGrid">
+<section id="crewGrid" class="pb-5 pl-1 pr-1">
     <h2 class="ml-5 pt-4 pb-4"> MeeT the Crew </h2>
-    <span>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</span>
     <div class="row justify-content-around">
-        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
-            <img class="card-img-top img-fluid" src="" alt="teammember">
+        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+            <div class="container-dirk"><img class="card-img-top img-fluid" src="../images/dirk.jpeg" alt="teammember">
+            </div>
             <div class="overlay">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-google-plus-g"></i>
+                <a href="https://facebook.com/vinnieschelfhaut"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i class="fab fa-github"></i></a>
             </div>
 
             <div class="member-body card-body">
                 <h5 class="card-title">Dirk Van Goethem</h5>
+                <hr>
                 <h6 class="card-subtitle mb-2">Commander in Chief</h6>
             </div>
         </div>
-
-        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
-            <img class="card-img-top img-fluid" src="" alt="teammember">
+        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+            <div class="container-laura"><img class="card-img-top img-fluid" src="../images/Laura-Devriendt.jpg"
+                                              alt="teammember"></div>
             <div class="overlay">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-google-plus-g"></i>
+                <a href="https://www.facebook.com/laura.devriendt.9"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://www.linkedin.com/in/laura-devriendt-784036117/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i class="fab fa-github"></i></a>
             </div>
             <div class="member-body card-body">
                 <h5 class="card-title">Laura Devriendt</h5>
+                <hr>
                 <h6 class="card-subtitle mb-2"> Chief of the Astronaut Office</h6>
             </div>
         </div>
 
-        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
-            <img class="card-img-top img-fluid" src="" alt="teammember">
+        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+            <div class="container-huyen">
+                <img class="card-img-top img-fluid" src="../images/Huyen.jpg" alt="teammember">
+            </div>
             <div class="overlay">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-google-plus-g"></i>
+                <a href="https://www.facebook.com/huyen.nguyenthi.336/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/thi-huyen-nguyen-a49b4384/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i class="fab fa-github"></i></a>
+
             </div>
             <div class="member-body card-body">
-                <h5 class="card-title"> Thi Huyen </h5>
+                <h5 class="card-title"> Thi Huyen Nguyen</h5>
+                <hr>
                 <h6 class="card-subtitle mb-2"> Interplanetary Mission Specialist</h6>
             </div>
         </div>
 
-        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
-            <img class="card-img-top img-fluid" src="" alt="teammember">
+        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+            <div class="container-jeremia"><img class="card-img-top img-fluid" src="../images/jeremiaverhulst.jpg"
+                                                alt="teammember"></div>
             <div class="overlay">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-google-plus-g"></i>
+                <a href="https://www.facebook.com/jeremia.verhulst"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/Webiato"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/jeremiaverhulst/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i class="fab fa-github"></i></a>
             </div>
             <div class="member-body card-body">
                 <h5 class="card-title">Jeremia Verhulst</h5>
+                <hr>
                 <h6 class="card-subtitle mb-2"> Head Engineer</h6>
             </div>
         </div>
-        <div class="doctor-card card text-center col-12 col-sm-5 col-lg-2">
-            <img class="card-img-top img-fluid" src="" alt="teammember">
+        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+            <div class="container-vinnie"><img class="card-img-top img-fluid" src="../images/vinnie.jpg"
+                                               alt="teammember"></div>
             <div class="overlay">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-google-plus-g"></i>
+                <a href="https://facebook.com/vinnieschelfhaut"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/VinnehBoom"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
             </div>
             <div class="member-body card-body">
                 <h5 class="card-title">Vinnie Schelfhaut</h5>
+                <hr>
                 <h6 class="card-subtitle mb-2">Payload Commander</h6>
             </div>
         </div>
     </div>
-
 
 </section>
 
@@ -204,5 +216,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 <script src="../js/about.js"></script>
+<script
+        src="https://kit.fontawesome.com/1cf94312e8.js"
+        crossorigin="anonymous"
+></script>
 </body>
 </html>
