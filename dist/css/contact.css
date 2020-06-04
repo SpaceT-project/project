@@ -172,6 +172,14 @@ footer .images-gellary ul li:nth-child(3n) {
     padding: 0 0.2rem;
   }
 }
+#comingSoon section {
+  margin-top: 40vh;
+}
+#comingSoon h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
 .contactPage {
   position: relative;
   font-family: "Roboto", sans-serif;

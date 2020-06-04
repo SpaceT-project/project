@@ -161,6 +161,14 @@ footer .images-gellary ul li:nth-child(3n) {
     padding: 0 0.2rem;
   }
 }
+#comingSoon section {
+  margin-top: 40vh;
+}
+#comingSoon h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
 body {
   background-color: #1B1F2B;
   color: #fff;
@@ -406,6 +414,7 @@ h1, h2, h3 {
   background: #000;
 }
 #destinations .parallax-section {
+  overflow-y: hidden;
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
@@ -418,6 +427,7 @@ h1, h2, h3 {
   text-shadow: 0 0 5px #000;
 }
 #destinations .parallax::after {
+  overflow-y: hidden;
   /* Display and position the pseudo-element */
   content: " ";
   position: absolute;
@@ -450,6 +460,7 @@ h1, h2, h3 {
   background: rgba(104, 157, 231, 0.596);
 }
 #destinations .bg1::after {
+  overflow-y: hidden;
   background-image: url("../images/Mars.jpg");
 }
 #destinations .bg2::after {
@@ -511,6 +522,10 @@ h1, h2, h3 {
   max-width: 250px;
   margin-bottom: 2rem;
   margin-right: 1rem;
+}
+#destinations .fact button a {
+  text-decoration: none;
+  color: #fff;
 }
 #destinations ::-webkit-scrollbar {
   width: 10px;
@@ -819,6 +834,14 @@ footer .images-gellary ul li:nth-child(3n) {
     padding: 0 0.2rem;
   }
 }
+#comingSoon section {
+  margin-top: 40vh;
+}
+#comingSoon h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
 .contactPage {
   position: relative;
   font-family: "Roboto", sans-serif;
