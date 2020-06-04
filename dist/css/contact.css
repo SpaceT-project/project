@@ -1,18 +1,16 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +19,6 @@ body {
   font-family: "Typodermic";
   src: url("../fonts/Typodermic.otf") format("opentype");
 }
-
 /*main colors*/
 /* blue/purple-ish colors */
 /* red/clay-ish colors */
@@ -96,23 +93,33 @@ footer .images-gellary ul li:nth-child(3n) {
 }
 
 .navSection {
-  border: 3px solid black;
   padding: 0 1rem;
+  border: none;
+  background: transparent;
 }
 .navSection .navMenu {
   position: relative;
 }
-.navSection .navBrand a {
-  color: black;
-  text-decoration: none;
+.navSection .navBrand {
+  height: 4rem;
+  padding: 0.5rem 0;
+}
+.navSection .navBrand img {
+  max-height: 100%;
 }
 .navSection .navBurger {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1rem;
   z-index: 2;
   cursor: pointer;
+}
+.navSection .navBurger .navBurgerBtn {
+  color: #fff;
+}
+.navSection .navBurger:hover .navBurgerBtn {
+  color: #EE7C62;
 }
 .navSection .navBar {
   position: absolute;
@@ -127,14 +134,19 @@ footer .images-gellary ul li:nth-child(3n) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(73, 80, 87, 0.98);
+  background-color: rgba(32, 47, 76, 0.98);
+}
+.navSection .navBar .nav {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .navSection .navBar .nav > li {
   list-style-type: none;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
 .navSection .navBar .nav > li a {
+  margin-top: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -148,7 +160,10 @@ footer .images-gellary ul li:nth-child(3n) {
   color: #fd7e14;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
+  .navSection {
+    background: transparent;
+  }
   .navSection .navBurger {
     display: none;
   }
@@ -156,25 +171,34 @@ footer .images-gellary ul li:nth-child(3n) {
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
-  .navSection .navBrand {
-    padding: 0.5rem 0;
-  }
   .navSection .navBar {
     text-align: right;
-    display: inline-block;
     position: relative;
     height: auto;
     width: 100%;
+    display: block;
   }
-  .navSection .navBar .nav > li {
-    display: inline-block;
+  .navSection .navBar .nav {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
   }
   .navSection .navBar .nav > li a {
+    color: #fff;
     font-size: 1rem;
-    color: black;
-    padding: 0 0.2rem;
+    padding-left: 0.5rem;
   }
 }
+#comingSoon section {
+  margin-top: 40vh;
+}
+#comingSoon h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
 .contactPage {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -312,17 +336,25 @@ footer .images-gellary ul li:nth-child(3n) {
   border-radius: 50%;
   background-color: #fff;
   color: #37527F;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+  overflow-y: hidden;
+}
+.contactPage .directChatIcon .iconCtn {
+  overflow: hidden;
+}
+.contactPage .directChatIcon #commentIcon {
+  margin: 0.5rem 0 0 0.3rem;
+}
+.contactPage .directChatIcon #timesIcon {
+  margin: 0.6rem 0 0 0.8rem;
 }
 .contactPage .directChatIcon:hover {
   box-shadow: 0 0 2px 2px #EE7C62;
   color: #EE7C62;
 }
 .contactPage .chatroom {
-  width: 300px;
+  z-index: 3;
+  width: 350px;
   position: fixed;
   right: 1rem;
   bottom: 5.5rem;
@@ -380,7 +412,8 @@ footer .images-gellary ul li:nth-child(3n) {
   border: 1px solid #37527F;
 }
 .contactPage .chatroom .chatItems .chatItem-user .userIcon {
-  padding-left: 1rem;
+  color: #EE7C62;
+  margin-left: 1rem;
 }
 .contactPage .chatroom .chatForm {
   border-top: 1px solid #ddd;

@@ -119,6 +119,8 @@ footer{
 
 .navSection {
   padding: 0 1rem;
+  border:none;
+  background: transparent;
 
   .navMenu {
     position: relative; //to set the position for navBurger as absolute
@@ -200,7 +202,7 @@ footer{
 //for navbar //
 @media (min-width: 768px) {
   .navSection {
-    background: none;
+    background: transparent;
 
     .navBurger {
       display: none;
