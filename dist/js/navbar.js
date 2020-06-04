@@ -8,7 +8,7 @@ let showMenu = false;
 
 function toggleNavMenu(){
     if(!showMenu){
-        navBurger.innerHTML = '<i class="fas fa-times"></i>';
+        navBurger.innerHTML = '<i class="navBurgerBtn fas fa-times"></i>';
         navBurger.style.color = 'white';
         navBar.classList.add('open');
         showMenu = true;

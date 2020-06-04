@@ -9,11 +9,11 @@ chatBtn.addEventListener('click', toggleChatroom);
 
 function toggleChatroom(){
     if(!showChatroom){
-        chatIcon.innerHTML = '<i class="fas fa-times fa-2x"></i>';
+        chatIcon.innerHTML = '<i id="timesIcon" class="fas fa-times fa-2x"></i>';
         chatroom.classList.add('open');
         showChatroom = true;
     } else {
-        chatIcon.innerHTML = '<i class="fas fa-comments fa-2x"></i>';
+        chatIcon.innerHTML = '<i id="commentIcon" class="fas fa-comments fa-2x"></i>';
         showChatroom = false;
         chatroom.classList.remove('open');
     }

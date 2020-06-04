@@ -178,10 +178,22 @@ $typodermic: 'Typodermic';
         border-radius: 50%;
         background-color: $clr-white;
         color: $clr-space-light;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         cursor: pointer;
+        overflow-y: hidden;
+
+        
+
+        .iconCtn {
+            overflow: hidden;
+        }
+
+        #commentIcon {
+            margin: 0.5rem 0 0 0.3rem;
+        }
+
+        #timesIcon {
+            margin: 0.6rem 0 0 0.8rem;
+        }
 
         &:hover {
             box-shadow: 0 0 2px 2px $clr-mars-light;
@@ -190,7 +202,8 @@ $typodermic: 'Typodermic';
     }
 
     .chatroom {
-        width: 300px;
+        z-index: 3;
+        width: 350px;
         position: fixed;
         right: 1rem;
         bottom: 5.5rem;
@@ -257,7 +270,8 @@ $typodermic: 'Typodermic';
                 }
 
                 .userIcon {
-                    padding-left: 1rem;
+                    color: $clr-mars-light;
+                    margin-left: 1rem;
                 }
             }
         }
