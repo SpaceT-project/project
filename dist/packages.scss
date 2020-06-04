@@ -1,0 +1,129 @@
+@import "./scss/partials/colors";
+
+@font-face {
+  font-family: Typodermic;
+  src: url("/fonts/Typodermic.otf");
+}
+
+$typodermic: font-family: Typodermic;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+
+  h1,
+  h5 {
+    font-family: Typodermic, sans-serif;
+  }
+
+  main {
+    background-color: $clr-space-dark;
+    color: $clr-white;
+    padding: 10vh 10vw;
+    margin: 5vh 0;
+
+    .cards-container {
+      margin: 10vh 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      .package-card {
+        margin: 4vh 2vw;
+        padding: 0;
+        min-width: 22rem;
+        max-width: 22rem;
+        border-radius: 3rem;
+        border: none;
+        overflow: hidden;
+        background-color: $clr-white;
+        color: $clr-space-dark;
+        box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05);
+
+        .pkg-img-container {
+          height: 15rem;
+          border-radius: 3rem 3rem 0 0;
+          overflow: hidden;
+
+          .pkg-img {
+            height: 100%;
+            width: auto;
+          }
+        }
+
+        .pkg-content {
+          h5 {
+            font-family: Typodermic;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: $clr-mars-light;
+          }
+
+          .pkg-price {
+            font-size: 3rem;
+            font-weight: 500;
+            text-align: right;
+            color: $clr-mars-light;
+
+            span {
+              vertical-align: middle;
+              margin-right: 10px;
+              font-size: 0.9rem;
+              font-weight: 300;
+              color: $clr-space-dark;
+            }
+          }
+
+          .pkg-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border: 1px solid $clr-space-light;
+            border-radius: 3rem;
+            font-variant: small-caps;
+            color: $clr-space-light;
+          }
+        }
+      }
+
+      .package-card:hover {
+        .pkg-img-container .pkg-img {
+          transform: scale(1.1);
+          transition: 0.5s ease;
+          overflow: hidden;
+        }
+
+        .pkg-btn {
+          color: $clr-white;
+          background-color: #37527f;
+          border: 1px solid #37527f;
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+          transition: 0.5s ease;
+        }
+      }
+
+      .tags {
+        display: flex;
+        .tag-duration {
+          width: 50%;
+          img {
+            margin-right: 10px;
+          }
+        }
+
+        .tag-experience {
+          width: 50%;
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
