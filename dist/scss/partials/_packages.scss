@@ -1,17 +1,4 @@
-@import "./scss/partials/colors";
 
-@font-face {
-  font-family: Typodermic;
-  src: url("../fonts/Typodermic.otf");
-}
-
-$typodermic: font-family: Typodermic;
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -22,7 +9,7 @@ body {
     font-family: Typodermic, sans-serif;
   }
 
-  main {
+  #packagesPage {
     background-color: $clr-space-dark;
     color: $clr-white;
     padding: 10vh 10vw;
@@ -127,3 +114,30 @@ body {
     }
   }
 }
+
+.carrousel-packages-preview{
+
+  margin-bottom: 3rem;
+
+   h2{
+        font-family: "Typodermic"; 
+        font-weight: 900;
+        color:#fff;
+
+
+    }
+
+    img{
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+    }
+
+
+    @media screen and (max-width:468px) {
+        h2{
+            font-size: 1.3rem;
+        }   
+    }
+}
+
