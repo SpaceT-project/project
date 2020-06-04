@@ -118,25 +118,36 @@ footer{
 }
 
 .navSection {
-  border: 3px solid black;
   padding: 0 1rem;
 
   .navMenu {
     position: relative; //to set the position for navBurger as absolute
   }
 
-  .navBrand a {
-    color: black;
-    text-decoration: none;
+  .navBrand {
+    height: 4rem;
+    padding: 0.5rem 0;
+
+    img {
+      max-height: 100%;
+    }
   }
 
   .navBurger {
-    font-size: 1.2rem; //make the burger bigger
+    font-size: 1.5rem; //make the burger bigger
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 1rem;
     z-index: 2;
     cursor: pointer;
+
+    .navBurgerBtn {
+      color: $clr-white;
+    }
+
+    &:hover .navBurgerBtn {
+      color: $clr-mars-light;
+    }
   }
 
   .navBar {
@@ -152,15 +163,21 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(73, 80, 87, 0.98);
+      background-color: rgba(32, 47, 76, 0.98);
+    }
+    
+    .nav {
+      display: grid;
+      grid-template-columns: 1fr;
     }
 
     .nav > li {
       list-style-type: none;
       text-align: center;
-      padding: 0.5rem 0;
+      padding: 0.5rem;
 
       a {
+        margin-top: 1rem;
         text-decoration: none;
         text-transform: uppercase;
         color: white;
@@ -178,9 +195,12 @@ footer{
     }
   }
 }
+
+
 //for navbar //
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .navSection {
+    background: none;
 
     .navBurger {
       display: none;
@@ -191,24 +211,27 @@ footer{
       grid-template-columns: 1fr 3fr;
     }
 
-    .navBrand {
-      padding: 0.5rem 0; //same as .nav>li
-    }
 
     .navBar {
       text-align: right;
-      display: inline-block;
       position: relative;
       height: auto;
       width: 100%;
+      display: block;
+
+      .nav {
+        margin-top: .8rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: auto;
+      }
 
       .nav > li {
-        display: inline-block;
-
         a {
+          color: $clr-white;
           font-size: 1rem;
-          color: black;
-          padding: 0 0.2rem;
+          padding-left: 0.5rem;
         }
       }
     }
