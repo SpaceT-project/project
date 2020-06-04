@@ -102,12 +102,14 @@ body {
 }
 
 .contactPage .contactUs .contactMethods .contactFormCtn button {
+  background-color: #EE7C62;
+  color: #fff;
   cursor: pointer;
 }
 
 .contactPage .contactUs .contactMethods .contactFormCtn button:hover {
+  font-weight: bold;
   border-color: #EE7C62;
-  background-color: #fff;
   -webkit-box-shadow: 0 0 2px 2px #EE7C62;
           box-shadow: 0 0 2px 2px #EE7C62;
   -webkit-transition: all 0.2s ease-in-out;
@@ -150,18 +152,12 @@ body {
   text-align: center;
 }
 
-.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .icon:hover {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  color: #EE7C62;
-}
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .emailUs, .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .callUs {
   text-decoration: none;
   color: inherit;
 }
 
-.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .emailUs:hover, .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .callUs:hover {
+.contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem:hover {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #EE7C62;
@@ -309,7 +305,8 @@ body {
 }
 
 .contactPage .chatroom .chatForm button {
-  color: #202F4C;
+  background-color: #37527F;
+  color: #fff;
   width: 4rem;
   cursor: pointer;
   position: absolute;
@@ -319,8 +316,7 @@ body {
 }
 
 .contactPage .chatroom .chatForm button:hover {
-  background-color: #37527F;
-  color: #fff;
+  color: #EE7C62;
 }
 
 @media (min-width: 768px) {

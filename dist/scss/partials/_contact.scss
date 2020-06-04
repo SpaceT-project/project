@@ -95,11 +95,13 @@
                 }
     
                 button {
+                    background-color: $clr-mars-light;
+                    color: $clr-white;
                     cursor: pointer;
     
                     &:hover {
+                        font-weight: bold;
                         border-color: $clr-mars-light;
-                        background-color: $clr-white;
                         box-shadow: 0 0 2px 2px $clr-mars-light;
                         @include transition-ease();
                     }
@@ -136,21 +138,16 @@
                             .icon {
                                 width: 40px;
                                 text-align: center;
-    
-                                &:hover {
-                                    @include transition-ease();
-                                    color: $clr-mars-light;
-                                }
                             }
     
                             .emailUs, .callUs {
                                 text-decoration: none;
                                 color: inherit;
-    
-                                &:hover {
-                                    @include transition-ease();
-                                    color: $clr-mars-light;
-                                }
+                            }
+
+                            &:hover {
+                                @include transition-ease();
+                                color: $clr-mars-light;
                             }
                         }
                     }
@@ -290,7 +287,8 @@
             }
 
             button {
-                color: $clr-space-regular;
+                background-color: $clr-space-light;
+                color: $clr-white;
                 width: 4rem;
                 cursor: pointer;
                 position: absolute;
@@ -299,8 +297,7 @@
                 z-index: 1;
 
                 &:hover {
-                    background-color: $clr-space-light;
-                    color: $clr-white;
+                    color: $clr-mars-light;
                 }
             }
         }
