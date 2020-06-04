@@ -73,11 +73,11 @@
 }
 /* Sets the actual background images */
 .bg1::after {
-  background-image: url("/dist/images/Mars.jpg");
+  background-image: url("../images/Mars.jpg");
 }
 
 .bg2::after {
-  background-image: url("/dist/images/Venus.jpg");
+  background-image: url("../images/Venus.jpg");
 }
 
 .bg3::after {

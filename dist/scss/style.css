@@ -67,9 +67,9 @@
   #destinations .static3 {
     background: rgba(104, 157, 231, 0.596); }
   #destinations .bg1::after {
-    background-image: url("/dist/images/Mars.jpg"); }
+    background-image: url("../images/Mars.jpg"); }
   #destinations .bg2::after {
-    background-image: url("/dist/images/Venus.jpg"); }
+    background-image: url("../images/Venus.jpg"); }
   #destinations .bg3::after {
     background-image: url("/dist/images/Neptunus.jpg"); }
   #destinations .bg1::after,
