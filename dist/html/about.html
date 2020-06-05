@@ -5,7 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="description"
+          content="This is an about page, containing history, vision, team members">
+    <meta name="keywords" content="spaceT,about,history">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,12 +21,13 @@
 <body id="aboutBody">
 
 <header>
-<!--Navigation bar, small screen: menu, open whole page, large screen: bar to the right, with JS-->
+    <!--Navigation bar, small screen: menu, open whole page, large screen: bar to the right, with JS-->
     <nav class="navSection">
         <div class="navCtn">
             <div class="navMenu">
                 <div class="navBrand">
-                    <a href="../../index.html"> <img src="../images/logoTextHorizontal-mini.png" alt="logo of spaceT"> </a>
+                    <a href="../../index.html"> <img src="../images/logoTextHorizontal-mini.png" alt="logo of spaceT">
+                    </a>
                 </div>
                 <div class="navBurger">
                     <i class="navBurgerBtn fas fa-bars"></i>
@@ -32,20 +35,20 @@
             </div>
             <div class="navBar">
                 <ul class="nav">
-                    <li><a href="../../index.html" >Home</a></li>
+                    <li><a href="../../index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
                     <li><a href="destination.html">Destinations</a></li>
                     <li><a href="packages.html">Packages</a></li>
-                    <li><a href="contact.html" >Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 <main>
-<h1 class="text-center mt-4"> In OrbiT around SpaceT</h1>
+    <h1 class="text-center mt-4"> In OrbiT around SpaceT</h1>
 
-<section id="vision-row" class="d-flex justify-content-between m-5">
+    <section id="vision-row" class="d-flex justify-content-between m-5">
         <div class="ml-5">
             <h2 class=" pt-4"> Our Vision </h2>
             <p class="text-justify"> Centuries ago, humanity set sail past the Seven Seas only to other worlds of
@@ -57,159 +60,197 @@
             <img id="vision" class="w-50 h-auto m-auto pt-4" src="../images/vision.jpeg" alt="vision">
         </div>
 
-</section>
+    </section>
 
-<hr class="mt-5 mb-3">
+    <hr class="mt-5 mb-3">
 
-<section id="historyTabs" class="tabs m-5 pb-5">
-    <h2 class="ml-5 pt-4 pb-4 mb-3"> HisTory of SpaceT </h2>
+    <section id="historyTabs" class="tabs m-5 pb-5">
+        <h2 class="ml-5 pt-4 pb-4 mb-3"> HisTory of SpaceT </h2>
 
-    <div class="d-flex row tabLinks justify-content-md-around align-content-sm-baseline">
-        <button id="defaultOpen" class="tabLink active" onclick="openTab('launchDiv', this)"><img src="../images/spaceLaunch2.png"> Launch staging</button>
-        <button id="liftBtn" class="tabLink" onclick="openTab('liftDiv', this)"><img src="../images/spaceLaunch3.png">Lift off</button>
-        <button id="ignitionBtn" class="tabLink" onclick="openTab('ignitionDiv', this)"><img src="../images/spaceLaunch4.png">Jettison & ignition</button>
-        <button id="orbitBtn" class="tabLink" onclick="openTab('orbitDiv', this)"><img src="../images/spaceLaunch1.png"> Orbit</button>
-        <div class="tabContents">
-        <div class="tabContent mb-5" id="launchDiv">
-            <h3>Setting up our base...</h3>
-            <p>In the year 2020, a deadly virus held a strong grip on our planet. Travelling was never going to be the
-                same until a vaccine
-                was created, which nobody could tell when it would be finished. And while most went to look for
-                sanctuaries within their own countries, we focused on laying the foundation for our first Star Port.
+        <div class="d-flex row tabLinks justify-content-md-around align-content-sm-baseline">
+            <button id="defaultOpen" class="tabLink active" onclick="openTab('launchDiv', this)"><img
+                    src="../images/spaceLaunch2.png"> Launch staging
+            </button>
+            <button id="liftBtn" class="tabLink" onclick="openTab('liftDiv', this)"><img
+                    src="../images/spaceLaunch3.png">Lift off
+            </button>
+            <button id="ignitionBtn" class="tabLink" onclick="openTab('ignitionDiv', this)"><img
+                    src="../images/spaceLaunch4.png">Jettison & ignition
+            </button>
+            <button id="orbitBtn" class="tabLink" onclick="openTab('orbitDiv', this)"><img
+                    src="../images/spaceLaunch1.png"> Orbit
+            </button>
+            <div class="tabContents">
+                <div class="tabContent mb-5" id="launchDiv">
+                    <h3>Setting up our base...</h3>
+                    <p>In the year 2020, a deadly virus held a strong grip on our planet. Travelling was never going to
+                        be the
+                        same until a vaccine
+                        was created, which nobody could tell when it would be finished. And while most went to look for
+                        sanctuaries within their own countries, we focused on laying the foundation for our first Star
+                        Port.
 
-        </div>
-        <div class="tabContent mb-5" id="liftDiv">
-            <h3> Taking to the skies</h3>
-            <p>After 3 years of hard work, our Commander in Chief Dirk Van Goethem led the first voyage to the moon.
-                With a crew of 5 cadets and a lucky few passengers, they arrived on the barren landscape of our natural
-                satellite, at a stone throw from our Base Lunar - X Æ A-12. Two weeks later, they successfully engaged thrusters homebound, where they arrived in little under 2 days time.</p>
-        </div>
+                </div>
+                <div class="tabContent mb-5" id="liftDiv">
+                    <h3> Taking to the skies</h3>
+                    <p>After 3 years of hard work, our Commander in Chief Dirk Van Goethem led the first voyage to the
+                        moon.
+                        With a crew of 5 cadets and a lucky few passengers, they arrived on the barren landscape of our
+                        natural
+                        satellite, at a stone throw from our Base Lunar - X Æ A-12. Two weeks later, they successfully
+                        engaged thrusters homebound, where they arrived in little under 2 days time.</p>
+                </div>
 
 
-        <div class="tabContent mb-5" id="ignitionDiv">
-            <h3> Setting course</h3>
-            <p>Not long after our first mission, we opened up to the public for enlisting and ...</p>
-        </div>
+                <div class="tabContent mb-5" id="ignitionDiv">
+                    <h3> Setting course</h3>
+                    <p>Not long after our first mission, we opened up to the public for enlisting. In our first 5 years,
+                        we completed approximately 70 passenger flights to Mars, Venus and the Moon, with a success rate
+                        of 99%.
+                        </br></br>
+                        The only issues we encountered were faulty reignition systems, ending up in 2 crews
+                        being stranded at our holiday resorts for a few weeks longer. Yet all passengers were
+                        sufficiently refunded, and were able to spend an extended time in space. Soon after, our science
+                        teams started working on expanding our holiday folder, with special attention for Neptune and
+                        Jupiter.
+                    </p>
+                </div>
 
-        <div class="tabContent mb-5" id="orbitDiv">
-            <h3> In perfect orbit</h3>
-        </div>
-    </div>
-</section>
+                <div class="tabContent mb-5" id="orbitDiv">
+                    <h3> In perfect orbit</h3>
+                    <p> After 20 years of non-stop functionality, we can now safely say we are in a perfect orbital
+                        state
+                        around our goals and vision. We have seen countless happy and amazed faces among our customers,
+                        and can pride ourselves in our customer service and support.
+                        </br></br>
+                        We would never have dreamed to get this far, and be able to think even <strong>bigger</strong>,
+                        and look beyond
+                        our own solar system. We are now working on a shuttle system that can take us to the closest
+                        inhabitable planet within reach: Proxima b.
+                    </p>
+                </div>
+            </div>
+    </section>
 
-<hr class="mt-5 mb-3">
+    <hr class="mt-5 mb-3">
 
-<section id="objectivesGrid" class="m-5 pb-5">
-    <h2 class="ml-5 pt-4 pb-4"> Our ObjecTives </h2>
+    <section id="objectivesGrid" class="m-5 pb-5">
+        <h2 class="ml-5 pt-4 pb-4"> Our ObjecTives </h2>
 
-    <div class="row justify-content-around">
+        <div class="row justify-content-around">
 
-        <div class="circle-image col-sm col-md-4">
-            <img class=" ml-auto" src="../images/travel.jpg" alt="space-travel">
-            <div class="hover-box">
-                <div class="hover-text text-center">Go beyond</div>
+            <div class="circle-image col-sm col-md-4">
+                <img class=" ml-auto" src="../images/travel.jpg" alt="space-travel">
+                <div class="hover-box">
+                    <div class="hover-text text-center">Go beyond</div>
+                </div>
+            </div>
+            <div class=" circle-image col-sm col-md-4">
+                <img class="" src="../images/solar.jpg" alt="solar-system">
+                <div class="hover-box">
+                    <div class="hover-text"> Expand your travel map</div>
+                </div>
+            </div>
+            <div class=" circle-image col-sm col-md-4 ">
+                <img class="" src="../images/space.jpeg" alt="stars">
+                <div class="hover-box">
+                    <div class="hover-text ">Discover the stars</div>
+                </div>
             </div>
         </div>
-        <div class=" circle-image col-sm col-md-4">
-            <img class="" src="../images/solar.jpg" alt="solar-system">
-            <div class="hover-box">
-                <div class="hover-text"> Expand your travel map</div>
+    </section>
+
+    <hr class="mt-5 mb-3">
+
+    <section id="crewGrid" class="pb-5 pl-1 pr-1 m-5">
+        <h2 class="ml-5 pt-4 pb-4"> MeeT the Crew </h2>
+        <div class="row justify-content-around">
+            <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+                <div class="container-dirk"><img class="card-img-top img-fluid" src="../images/dirk.jpeg"
+                                                 alt="teammember">
+                </div>
+                <div class="overlay">
+                    <a href="https://facebook.com/vinnieschelfhaut"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i
+                            class="fab fa-github"></i></a>
+                </div>
+
+                <div class="member-body card-body">
+                    <h5 class="card-title">Dirk Van Goethem</h5>
+                    <hr>
+                    <h6 class="card-subtitle mb-2">Commander in Chief</h6>
+                </div>
+            </div>
+            <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+                <div class="container-laura"><img class="card-img-top img-fluid" src="../images/Laura-Devriendt.jpg"
+                                                  alt="teammember"></div>
+                <div class="overlay">
+                    <a href="https://www.facebook.com/laura.devriendt.9"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://www.linkedin.com/in/laura-devriendt-784036117/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/LauraDevriendt"> <i class="fab fa-github"></i></a>
+                </div>
+                <div class="member-body card-body">
+                    <h5 class="card-title">Laura Devriendt</h5>
+                    <hr>
+                    <h6 class="card-subtitle mb-2"> Chief of the Astronaut Office</h6>
+                </div>
+            </div>
+
+            <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+                <div class="container-huyen">
+                    <img class="card-img-top img-fluid" src="../images/Huyen.jpg" alt="teammember">
+                </div>
+                <div class="overlay">
+                    <a href="https://www.facebook.com/huyen.nguyenthi.336/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/thi-huyen-nguyen-a49b4384/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i
+                            class="fab fa-github"></i></a>
+
+                </div>
+                <div class="member-body card-body">
+                    <h5 class="card-title"> Thi Huyen Nguyen</h5>
+                    <hr>
+                    <h6 class="card-subtitle mb-2"> Interplanetary Mission Specialist</h6>
+                </div>
+            </div>
+
+            <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+                <div class="container-jeremia"><img class="card-img-top img-fluid" src="../images/jeremiaverhulst.jpg"
+                                                    alt="teammember"></div>
+                <div class="overlay">
+                    <a href="https://www.facebook.com/jeremia.verhulst"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/Webiato"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/jeremiaverhulst/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i
+                            class="fab fa-github"></i></a>
+                </div>
+                <div class="member-body card-body">
+                    <h5 class="card-title">Jeremia Verhulst</h5>
+                    <hr>
+                    <h6 class="card-subtitle mb-2"> Head Engineer</h6>
+                </div>
+            </div>
+            <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
+                <div class="container-vinnie"><img class="card-img-top img-fluid" src="../images/vinnie.jpg"
+                                                   alt="teammember"></div>
+                <div class="overlay">
+                    <a href="https://facebook.com/vinnieschelfhaut"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/VinnehBoom"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/LauraDevriendt"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="member-body card-body">
+                    <h5 class="card-title">Vinnie Schelfhaut</h5>
+                    <hr>
+                    <h6 class="card-subtitle mb-2">Payload Commander</h6>
+                </div>
             </div>
         </div>
-        <div class=" circle-image col-sm col-md-4 ">
-            <img class="" src="../images/space.jpeg" alt="stars">
-            <div class="hover-box">
-                <div class="hover-text ">Discover the stars</div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<hr class="mt-5 mb-3">
-
-<section id="crewGrid" class="pb-5 pl-1 pr-1 m-5">
-    <h2 class="ml-5 pt-4 pb-4"> MeeT the Crew </h2>
-    <div class="row justify-content-around">
-        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
-            <div class="container-dirk"><img class="card-img-top img-fluid" src="../images/dirk.jpeg" alt="teammember">
-            </div>
-            <div class="overlay">
-                <a href="https://facebook.com/vinnieschelfhaut"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i class="fab fa-github"></i></a>
-            </div>
-
-            <div class="member-body card-body">
-                <h5 class="card-title">Dirk Van Goethem</h5>
-                <hr>
-                <h6 class="card-subtitle mb-2">Commander in Chief</h6>
-            </div>
-        </div>
-        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
-            <div class="container-laura"><img class="card-img-top img-fluid" src="../images/Laura-Devriendt.jpg"
-                                              alt="teammember"></div>
-            <div class="overlay">
-                <a href="https://www.facebook.com/laura.devriendt.9"><i class="fab fa-facebook-f"></i></a>
-                <a href="http://www.linkedin.com/in/laura-devriendt-784036117/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/LauraDevriendt"> <i class="fab fa-github"></i></a>
-            </div>
-            <div class="member-body card-body">
-                <h5 class="card-title">Laura Devriendt</h5>
-                <hr>
-                <h6 class="card-subtitle mb-2"> Chief of the Astronaut Office</h6>
-            </div>
-        </div>
-
-        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
-            <div class="container-huyen">
-                <img class="card-img-top img-fluid" src="../images/Huyen.jpg" alt="teammember">
-            </div>
-            <div class="overlay">
-                <a href="https://www.facebook.com/huyen.nguyenthi.336/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/in/thi-huyen-nguyen-a49b4384/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i class="fab fa-github"></i></a>
-
-            </div>
-            <div class="member-body card-body">
-                <h5 class="card-title"> Thi Huyen Nguyen</h5>
-                <hr>
-                <h6 class="card-subtitle mb-2"> Interplanetary Mission Specialist</h6>
-            </div>
-        </div>
-
-        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
-            <div class="container-jeremia"><img class="card-img-top img-fluid" src="../images/jeremiaverhulst.jpg"
-                                                alt="teammember"></div>
-            <div class="overlay">
-                <a href="https://www.facebook.com/jeremia.verhulst"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/Webiato"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/jeremiaverhulst/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"> <i class="fab fa-github"></i></a>
-            </div>
-            <div class="member-body card-body">
-                <h5 class="card-title">Jeremia Verhulst</h5>
-                <hr>
-                <h6 class="card-subtitle mb-2"> Head Engineer</h6>
-            </div>
-        </div>
-        <div class="crew-card card text-center col-12 col-sm-5 col-lg-2">
-            <div class="container-vinnie"><img class="card-img-top img-fluid" src="../images/vinnie.jpg"
-                                               alt="teammember"></div>
-            <div class="overlay">
-                <a href="https://facebook.com/vinnieschelfhaut"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/VinnehBoom"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/vinnie-schelfhaut-5a43091a6/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/LauraDevriendt"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="member-body card-body">
-                <h5 class="card-title">Vinnie Schelfhaut</h5>
-                <hr>
-                <h6 class="card-subtitle mb-2">Payload Commander</h6>
-            </div>
-        </div>
-    </div>
-
-</section>
+    </section>
 </main>
 <footer class="footer">
     <div class="container">
@@ -239,7 +280,9 @@
                     <div class="footer-widget-content">
                         <div class="media">
                             <div class="media-left">
-                                <img class="media-object" src="https://eandt.theiet.org/media/9265/dreamstime_xl_102581846.jpg?anchor=center&mode=crop&width=640&height=480&rnd=132095759620000000" height="60px" width="60px" alt="...">
+                                <img class="media-object"
+                                     src="https://eandt.theiet.org/media/9265/dreamstime_xl_102581846.jpg?anchor=center&mode=crop&width=640&height=480&rnd=132095759620000000"
+                                     height="60px" width="60px" alt="...">
                             </div>
                             <div class="media-body">
                                 <p>spacewalk.</p>
@@ -248,7 +291,9 @@
                         </div>
                         <div class="media">
                             <div class="media-left">
-                                <img class="media-object" src="https://www.openaccessgovernment.org/wp-content/uploads/2019/09/dreamstime_xxl_123015144.jpg" height="60px" width="60px" alt="...">
+                                <img class="media-object"
+                                     src="https://www.openaccessgovernment.org/wp-content/uploads/2019/09/dreamstime_xxl_123015144.jpg"
+                                     height="60px" width="60px" alt="...">
                             </div>
                             <div class="media-body">
                                 <p>the view.</p>
@@ -264,14 +309,19 @@
                     <div class="footer-widget-content">
                         <div class="pay-methods ">
                             <ul class="pay-methods">
-                                <li><span><i class="fab fa-cc-paypal"></i></span><p><strong>Paypal</strong></p></li>
-                                <li><span><i class="fab fa-cc-visa"></i></span><p><strong>Visa</strong></p></li>
-                                <li><span><i class="fab fa-cc-mastercard"></i></span><p><strong>Mastercard</strong></p></li>
-                                <li><span><i class="fab fa-bitcoin"></i></span><p><strong>Bitcoin</strong></p></li>
+                                <li><span><i class="fab fa-cc-paypal"></i></span>
+                                    <p><strong>Paypal</strong></p></li>
+                                <li><span><i class="fab fa-cc-visa"></i></span>
+                                    <p><strong>Visa</strong></p></li>
+                                <li><span><i class="fab fa-cc-mastercard"></i></span>
+                                    <p><strong>Mastercard</strong></p></li>
+                                <li><span><i class="fab fa-bitcoin"></i></span>
+                                    <p><strong>Bitcoin</strong></p></li>
                             </ul>
                         </div>
                     </div>
-                </div></div>
+                </div>
+            </div>
 
             <div class="col-sm-3">
                 <div class="footer-widget">
@@ -279,12 +329,23 @@
                     <div class="footer-widget-content">
                         <div class="images-gellary">
                             <ul>
-                                <li><img src="https://media4.s-nbcnews.com/j/newscms/2016_17/1512721/160426-esa-moon-base-fosters-1101a_e06359aa34cb58ee623a36ab226bf9a1.fit-760w.jpg" height="85px" width="85px" alt="Instagram 01"></li>
-                                <li><img src="https://cdn.images.express.co.uk/img/dynamic/151/590x/Space-news-human-colony-on-Moon-lunar-colonies-lava-tubes-Asgardia-Lembit-Opik-1211678.jpg?r=1575215011335" height="85px" width="85px" alt="Instagram 02"></li>
-                                <li><img src="https://eandt.theiet.org/media/8472/dreamstime_xxl_121340291.jpg?crop=0.14492753623188409,0,0,0&cropmode=percentage&width=640&height=480&rnd=132022202090000000" height="85px" width="85px" alt="Instagram 03"></li>
-                                <li><img src="https://i.ebayimg.com/00/s/MTAyNFgxMDI0/z/heAAAOSwq4RdcOUv/$_10.JPG?set_id=2" height="85px" width="85px" alt="Instagram 04"></li>
-                                <li><img src="https://www.scitecheuropa.eu/wp-content/uploads/2019/10/Space-Race.jpg" height="85px" width="85px" alt="Instagram 05"></li>
-                                <li><img src="https://en.zamanalwsl.net/CustomImage/get/770/438/5925d15523de3e982809aa45.jpg" height="85px" width="85px" alt="Instagram 06"></li>
+                                <li><img
+                                        src="https://media4.s-nbcnews.com/j/newscms/2016_17/1512721/160426-esa-moon-base-fosters-1101a_e06359aa34cb58ee623a36ab226bf9a1.fit-760w.jpg"
+                                        height="85px" width="85px" alt="Instagram 01"></li>
+                                <li><img
+                                        src="https://cdn.images.express.co.uk/img/dynamic/151/590x/Space-news-human-colony-on-Moon-lunar-colonies-lava-tubes-Asgardia-Lembit-Opik-1211678.jpg?r=1575215011335"
+                                        height="85px" width="85px" alt="Instagram 02"></li>
+                                <li><img
+                                        src="https://eandt.theiet.org/media/8472/dreamstime_xxl_121340291.jpg?crop=0.14492753623188409,0,0,0&cropmode=percentage&width=640&height=480&rnd=132022202090000000"
+                                        height="85px" width="85px" alt="Instagram 03"></li>
+                                <li><img
+                                        src="https://i.ebayimg.com/00/s/MTAyNFgxMDI0/z/heAAAOSwq4RdcOUv/$_10.JPG?set_id=2"
+                                        height="85px" width="85px" alt="Instagram 04"></li>
+                                <li><img src="https://www.scitecheuropa.eu/wp-content/uploads/2019/10/Space-Race.jpg"
+                                         height="85px" width="85px" alt="Instagram 05"></li>
+                                <li><img
+                                        src="https://en.zamanalwsl.net/CustomImage/get/770/438/5925d15523de3e982809aa45.jpg"
+                                        height="85px" width="85px" alt="Instagram 06"></li>
                             </ul>
                         </div>
                     </div>
