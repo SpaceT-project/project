@@ -188,7 +188,7 @@ footer .images-gellary ul li:nth-child(3n) {
   text-align: center;
 }
 
-body {
+#aboutBody {
   background-color: #1B1F2B;
   color: #fff;
 }
@@ -398,6 +398,13 @@ h1, h2, h3 {
 }
 .crew-card h5 {
   font-family: NasaFont, sans-serif;
+}
+
+#destination {
+  background: #000;
+}
+#destination .navSection .navDestination {
+  background: #000;
 }
 
 #destinations {
@@ -879,6 +886,10 @@ footer .images-gellary ul li:nth-child(3n) {
 #comingSoon h1 {
   font-size: 5rem;
   text-align: center;
+}
+
+.navSection {
+  background: #202F4C;
 }
 
 .contactPage {
