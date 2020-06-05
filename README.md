@@ -39,5 +39,5 @@
 
 ## Want to launch with space T
 ------
-[click here to launch](LINK)
+[Click here to launch](https://spacet-project.github.io/project/)
 
