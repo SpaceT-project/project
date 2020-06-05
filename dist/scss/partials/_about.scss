@@ -1,0 +1,277 @@
+
+
+//For smartphone
+
+body {
+  background-color: $clr-space-dark;
+  color: $clr-white;
+}
+
+hr {
+
+  background-color: $clr-mars-light;
+  border-radius: 25%;
+  border-bottom: 0.2rem solid $clr-mars-light;
+  box-shadow: 0 0.1rem 0.3rem $clr-white;
+}
+
+
+
+//for screen larger than smartphone
+
+@font-face {
+  font-family: NasaFont;
+  src: url('../../fonts/Typodermic_-_NasalizationRg-Regular.otf');
+}
+
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1, h2, h3 {
+  font-family: NasaFont, serif;
+}
+
+
+
+
+// Vision
+
+#vision {
+  border-radius: 48%;
+}
+
+
+// for tabs
+.tabs {
+  .tabLinks {
+
+    .tabLink {
+      font-family: NasaFont, sans-serif;
+      width: 12rem;
+      background: $clr-space-light;
+      border-style: none;
+      border-top-right-radius: 40%;
+      border-top-left-radius: 40%;
+      border-bottom-right-radius: 10%;
+      border-bottom-left-radius: 10%;
+      color: $clr-white;
+      opacity: 0.8;
+      padding: 0.5rem 0.7rem 0.3rem 0.7rem;
+      margin: 0 auto;
+      outline: none;
+    }
+
+    .tabLink:hover {
+      opacity: 1;
+      box-shadow: 0 0 0.2rem $clr-moon-light;
+    }
+  }
+}
+
+.tabContent {
+  display: none;
+  padding: 3rem;
+  text-align: center;
+  color: $clr-white;
+}
+
+.tabContents {
+  background-color: $clr-mars-dark;
+  border: 0.3rem solid $clr-space-light;
+  margin: -0.2rem 0.4rem 0.2rem 0.4rem;
+  margin-top: -0.2rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0 0.5rem $clr-moon-light;
+}
+
+
+
+// for rounded image bar
+
+.circle-image, .circle-image > img {
+
+  .hover-box {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hover-text {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  position: relative;
+  height: 12rem;
+  max-width: 12rem;
+  min-width: 12rem;
+  border-radius: 47%;
+  overflow-y: hidden;
+
+}
+
+.circle-image > img {
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+  display: block;
+}
+
+
+.circle-image:hover img {
+  opacity: 0.3;
+}
+
+.circle-image:hover .hover-box {
+  opacity: 1;
+}
+
+// for crew cards
+@mixin card-img-style {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.crew-card {
+  .container-dirk {
+    @include card-img-style;
+    background: $clr-moon-dark;
+  }
+
+  .container-laura {
+    @include card-img-style;
+    background: $clr-mars-light;
+  }
+
+  .container-huyen {
+    @include card-img-style;
+    background: $clr-mars-regular;
+  }
+
+  .container-jeremia {
+    @include card-img-style;
+    background: $clr-moon-regular;
+  }
+
+  .container-vinnie {
+    @include card-img-style;
+    background: $clr-mars-dark;
+  }
+
+  .card-img-top {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+  }
+
+  .overlay {
+    display: none;
+
+  }
+
+  &:hover {
+
+    box-shadow: 0 0 28px 0 rgba(32, 32, 32, 0.336);
+
+    .member-body {
+      position: relative;
+      z-index: 3;
+    }
+
+    .overlay {
+      position: absolute;
+      background-color: $clr-moon-light;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.6s ease;
+      z-index: 2;
+
+      i {
+        cursor: pointer;
+        margin-right: 0.2rem;
+        margin-bottom: 2rem;
+        min-width: 30px;
+        padding: 0.5rem;
+        border: 1px solid $clr-space-light;
+
+      }
+
+      .fa-facebook-f {
+        color: #3b5998;
+
+        &:hover {
+          background: $clr-white;
+        }
+      }
+
+      .fa-twitter {
+        color: #1da1f2;
+        transition: all 0.6s ease;
+
+        &:hover {
+          background: $clr-white;
+        }
+      }
+
+      .fa-linkedin {
+        color: #007bb5;
+        transition: all 0.6s ease;
+
+        &:hover {
+          background: $clr-white;
+        }
+      }
+
+      .fa-github {
+        color: #ea4335;
+        transition: all 0.6 ease;
+
+        &:hover {
+          background: $clr-white;
+        }
+      }
+
+
+    }
+  }
+
+  h5 {
+    font-family: NasaFont, sans-serif;
+  }
+  background-color: $clr-space-regular;
+  padding: 0;
+  border-style: none;
+  transition: all 0.6s ease;
+  position: relative;
+  max-width: 15rem;
+  margin-top: 1rem;
+}
+
+
+
+
+
+

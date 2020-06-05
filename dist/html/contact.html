@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="This is a contact page, containing form and chatroom to contact SpaceT">
+    <meta name="keywords" content="spaceT,contact">
+
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+    />
+    <title>Contact us</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <!--Navigation bar, small screen: menu, open whole page, large screen: bar to the right, with JS-->
+    <nav class="navSection">
+        <div class="navCtn">
+            <div class="navMenu">
+                <div class="navBrand">
+                    <a href="../../index.html"> <img src="../images/logoTextHorizontal-mini.png" alt="logo of spaceT"> </a>
+                </div>
+                <div class="navBurger">
+                    <i class="navBurgerBtn fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="navBar">
+                <ul class="nav">
+                    <li><a href="../../index.html" >Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="contactPage">
+
+
+    <section class="contactUs">
+        <div class="logoCtn">
+            <img class="logo" src="../images/logo-mini.png" alt="logo">
+        </div>
+        <div class="sayHello">
+            <p class="p1">Contact Space<span class="big">T</span></p>
+            <h1>Got a question?</h1>
+            <p class="p2">Thank you for your interest in learning more about SpaceT.</p>
+            <p class="p2">Feel free to contact us by filling the form below if you have any question.</p>
+        </div>
+        <div class="contactMethods">
+            <!--Contain two main parts, each part will be like: on phone - img as background, big screen, img to the right/left-->
+            <div class="contactFormCtn">
+                <form id="contactForm" action="https://formspree.io/moqkdwea" method="post" enctype="multipart/form-data" name="emailForm">
+                    <input aria-label="Enter your first name" type="text" name="firstName" value="" placeholder="First Name" required>
+                    <input aria-label="Enter your last name" type="text" name="lastName" value="" placeholder="Last Name" required>
+                    <input aria-label="Enter your email address" type="email" name="lastName" value="" placeholder="Your email address" required>
+                    <label for="packages">Which packages are you interested in?</label>
+                    <select id="packages" name="packages">
+                        <option value="packages">Choose a package</option>
+                        <option value="package1">Around the World</option>
+                        <option value="package2">Mars Rover Trail</option>
+                        <option value="package3">Neptune Deep Dive</option>
+                        <option value="package4">Venus Flytrap</option>
+                        <option value="package5">Lunar Athletics Bootcamp</option>
+                        <option value="package6">Galactic Gastronomy</option>
+                    </select> 
+                    <label for="natureInterest">What is the nature of your interest?</label>
+                    <select id="natureInterest" name="packages">
+                        <option value="reasons">Choose an option</option>
+                        <option value="reason1">I would like to make a reservation</option>
+                        <option value="reason2">I have a specific question</option>
+                        <option value="reason3">Send me an electronic brochure</option>
+                        <option value="reason4">Others</option>
+                    </select> 
+                    <textarea aria-label="Enter your message here" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
+                    <button type="submit" name="submit">Send</button>
+                </form>
+            </div>
+            <div class="contactInfo">
+                <div class="contactInfoCtn">
+                    <h4>How to find SpaceT</h4>
+                    <div class="infoItems">
+                        <div class="infoItem">
+                            <p class="icon address"><i class="fas fa-map-marker-alt"></i></p>
+                            <p class="address">Street Name 123, 4567 City Name, Belgium</p>
+                        </div>
+                        <div class="infoItem">
+                            <p class="icon"><i class="fas fa-clock"></i></p>
+                            <p class="openhour">Mon - Fri: 9:00 - 17:00</p>
+                        </div>
+                        <div class="infoItem emailDiv">
+                            <p class="icon"><i class="fas fa-envelope"></i></p>
+                            <p class="email"><a class="emailUs" title="Click to send an email to us" href="mailto:example@example.com">example@example.com</a></p>
+                        </div>
+                        <div class="infoItem phoneDiv">
+                            <p class="icon"><i class="fas fa-phone-alt"></i></p>
+                            <p class="phone"><a class="callUs" title="Click to call us" href="tel:+32485123456">(+32) 0485 123 456</a></p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe title="location of SpaceT displayed on Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d319885.0656607863!2d4.141289380560442!3d51.217195239601004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f703e7404c69%3A0x270b07bbe1f68aa6!2sAntwerpen-Centraal!5e0!3m2!1snl!2sbe!4v1590755875122!5m2!1snl!2sbe" width="400" height="300" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="directChatIcon">
+        <div class="iconCtn">
+            <p class="chatIcon"><i id="commentIcon" class="fas fa-comments fa-2x"></i></p>
+        </div>
+    </div>
+    <div class="chatroom">
+        <div class="chatroomHeader">
+            <div class="logoCtn">
+                <img class="logo" src="../images/logo-mini.png" alt="logo">
+            </div>
+            <h3>SpaceT</h3>
+            <p> <span class="circle"><i class="fas fa-circle"></i></span> Online</p>
+        </div>
+        <div class="chatItems">
+            <div class="chatItem-spaceT">
+                <div class="logoCtn">
+                    <img class="logo" src="../images/logo-mini.png" alt="logo">
+                </div>
+                <div class="chatMsg">
+                    <p class="spaceTChatMsg">Hello, welcome to SpaceT. How can we help you?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatForm">
+            <input id="userDirectMsg" name="directMsg" type="text" placeholder="Enter your message">
+            <button class="sendMsg"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="footer-widget">
+                    <h3>Stay in touch</h3>
+                    <div class="footer-widget-content">
+                        <a href="mailto:sales@example.com" class="contact-link">sales@example.com</a>
+                        <a href="mailto:support@example.com" class="contact-link red"> support@example.com </a>
+                        <a href="tel:0121234" class="contact-link">(123) 456-789</a>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.youtube.com"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-widget">
+                    <h3>Latest Events</h3>
+                    <div class="footer-widget-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <img class="media-object" src="https://eandt.theiet.org/media/9265/dreamstime_xl_102581846.jpg?anchor=center&mode=crop&width=640&height=480&rnd=132095759620000000" height="60px" width="60px" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <p>spacewalk.</p>
+                                <span>June 4, 2020 </span>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img class="media-object" src="https://www.openaccessgovernment.org/wp-content/uploads/2019/09/dreamstime_xxl_123015144.jpg" height="60px" width="60px" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <p>the view.</p>
+                                <span>June 4, 2020 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-widget">
+                    <h3>Payment methods</h3>
+                    <div class="footer-widget-content">
+                        <div class="pay-methods ">
+                            <ul class="pay-methods">
+                                <li><span><i class="fab fa-cc-paypal"></i></span><p><strong>Paypal</strong></p></li>
+                                <li><span><i class="fab fa-cc-visa"></i></span><p><strong>Visa</strong></p></li>
+                                <li><span><i class="fab fa-cc-mastercard"></i></span><p><strong>Mastercard</strong></p></li>
+                                <li><span><i class="fab fa-bitcoin"></i></span><p><strong>Bitcoin</strong></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div></div>
+
+            <div class="col-sm-3">
+                <div class="footer-widget">
+                    <h3>Latest Events</h3>
+                    <div class="footer-widget-content">
+                        <div class="images-gellary">
+                            <ul>
+                                <li><img src="https://media4.s-nbcnews.com/j/newscms/2016_17/1512721/160426-esa-moon-base-fosters-1101a_e06359aa34cb58ee623a36ab226bf9a1.fit-760w.jpg" height="85px" width="85px" alt="Instagram 01"></li>
+                                <li><img src="https://cdn.images.express.co.uk/img/dynamic/151/590x/Space-news-human-colony-on-Moon-lunar-colonies-lava-tubes-Asgardia-Lembit-Opik-1211678.jpg?r=1575215011335" height="85px" width="85px" alt="Instagram 02"></li>
+                                <li><img src="https://eandt.theiet.org/media/8472/dreamstime_xxl_121340291.jpg?crop=0.14492753623188409,0,0,0&cropmode=percentage&width=640&height=480&rnd=132022202090000000" height="85px" width="85px" alt="Instagram 03"></li>
+                                <li><img src="https://i.ebayimg.com/00/s/MTAyNFgxMDI0/z/heAAAOSwq4RdcOUv/$_10.JPG?set_id=2" height="85px" width="85px" alt="Instagram 04"></li>
+                                <li><img src="https://www.scitecheuropa.eu/wp-content/uploads/2019/10/Space-Race.jpg" height="85px" width="85px" alt="Instagram 05"></li>
+                                <li><img src="https://en.zamanalwsl.net/CustomImage/get/770/438/5925d15523de3e982809aa45.jpg" height="85px" width="85px" alt="Instagram 06"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"
+></script>
+
+<script src="https://kit.fontawesome.com/2e0a884014.js" crossorigin="anonymous"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/chatroom.js"></script>
+</body>
+</html>

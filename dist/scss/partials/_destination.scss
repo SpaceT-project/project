@@ -1,0 +1,207 @@
+#destinations{
+
+/* -----------------------------------*/
+/*          CREATING PARALLAX         */
+/* -----------------------------------*/
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+     * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+  background: #000;
+}
+
+.parallax-section {
+  overflow-y: hidden;
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  overflow-y: hidden;
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  height: auto;
+  min-height: 100vh;
+  box-shadow: 0px 0px 85px -16px rgba(255, 252, 252, 0.75);
+}
+
+.static1 {
+  background: rgba(244, 135, 80, 0.705);
+  padding-right: 1rem;
+}
+
+.static2 {
+  background: rgba(217, 164, 58, 0.5);
+}
+
+.static3 {
+  background: rgba(104, 157, 231, 0.596);
+}
+/* Sets the actual background images */
+.bg1::after {
+  padding-top: 5rem;
+  overflow-y: hidden;
+  background-image: url("../images/Mars.jpg");
+}
+
+.bg2::after {
+  background-image: url("../images/Venus.jpg");
+}
+
+.bg3::after {
+  background-image: url("../images/Neptunus.jpg");
+}
+
+.bg1::after,
+.bg2::after,
+.bg3::after {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* -----------------------------------*/
+/*          PARALLAX CONTENT          */
+/* -----------------------------------*/
+
+h1 {
+  font-family: "Typodermic";
+  font-weight: 800;
+  font-size: 6rem;
+  text-shadow: 4px 4px 2px rgba(118, 150, 150, 1);
+}
+
+.title {
+  font-family: "Typodermic";
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Typodermic";
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.row-planet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-planet {
+  margin-left: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  max-width: 550px;
+  margin-right: 4rem;
+}
+
+.quick-facts {
+  border: 1px solid rgb(244, 135, 80);
+  height: auto;
+  border-radius: 3rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+  min-width: 250px;
+  max-width: 250px;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+  .fact button a{
+    text-decoration: none;
+    color: $clr-white;
+  }
+
+/* -----------------------------------*/
+/*          PARALLAX scrollbars       */
+/* -----------------------------------*/
+
+//  MAIN SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3a3737;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* -----------------------------------*/
+/*          mediaqueries              */
+/* -----------------------------------*/
+
+@media only screen and (max-width: 568px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .row-planet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .about-planet {
+    margin-right: 0;
+  }
+}
+}
