@@ -4,10 +4,10 @@
   color: #555;
   background-image: url(https://images.alphacoders.com/935/thumb-1920-935315.png);
   background-repeat: repeat;
-
   text-align: center;
   font-family: "Roboto", sans-serif;
   padding: 1em;
+  overflow-x: hidden;
 
   .slogan{
     margin-top: 3rem;
@@ -20,6 +20,7 @@
 
   main{
     margin-bottom: 6rem;
+
   }
 
 
@@ -32,13 +33,15 @@
   margin-bottom: 5px;
   border: 3px solid $clr-moon-light;
   border-radius: 0%;
-
+  overflow-x:hidden;
 }
 
 .wrapper{
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  border-radius: 2rem;
+  overflow-x:hidden;
 
   .wrapper .wrapper__video{
     object-fit: cover;

@@ -17,7 +17,7 @@ $clr-black: #000;
 $clr-white: #fff;
 
 /* blue/purple-ish colors */
-$clr-space-dark: #1B1F2B;
+$clr-space-dark: rgb(27, 31, 43);
 $clr-space-regular: #202F4C;
 $clr-space-light: #37527F;
 
@@ -171,7 +171,7 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(32, 47, 76, 0.98);
+      background-color: rgba(27, 31, 43, 0.98);
     }
     
     .nav {
@@ -193,11 +193,11 @@ footer{
         transition: color 0.3s ease-in-out;
 
         &.active {
-          color: #fd7e14;
+          color: $clr-mars-light;
         }
 
         &:hover {
-          color: #fd7e14;
+          color: $clr-mars-regular;
         }
       }
     }
@@ -257,4 +257,29 @@ footer{
     font-size: 5rem;
     text-align: center;
   }
+}
+
+/* -----------------------------------*/
+/*          scrollbar                 */
+/* -----------------------------------*/
+
+//  MAIN SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3a3737;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

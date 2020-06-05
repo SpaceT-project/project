@@ -1,48 +1,59 @@
-#destination{
-  background: $clr-black;
+#destinationBody{
+  overflow-y: hidden;
+  background-image: url("https://images.alphacoders.com/935/thumb-1920-935315.png");
+  background-repeat: no-repeat;
 
 
-.navSection .navDestination{
-  background: rgba(0,0,0,0.5);
-}
 }
 
 #destinations{
+  background-image: url("https://images.alphacoders.com/935/thumb-1920-935315.png");
+  background-repeat: no-repeat;
+
+
+  header{
+    background: transparent;
+  }
+
+  .navDestination, .navCtn{
+    background: $clr-black;
+  }
 
 /* -----------------------------------*/
 /*          CREATING PARALLAX         */
 /* -----------------------------------*/
 
 .wrapper {
+
   /* The height needs to be set to a fixed value for the effect to work.
      * 100vh is the full height of the viewport. */
   height: 100vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 2px;
-  background: #000;
+
 }
 
 .parallax-section {
+
+  overflow-x: hidden;
   overflow-y: hidden;
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  height: 120vh;
 
   /* For text formatting. */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
+  color: $clr-white;
+  text-shadow: 0 0 5px $clr-black;
 }
 
 .parallax::after {
-  overflow-y: hidden;
+
   /* Display and position the pseudo-element */
   content: " ";
   position: absolute;
@@ -101,6 +112,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 5rem;
 }
 
 /* -----------------------------------*/
@@ -166,30 +178,8 @@ h3 {
     color: $clr-white;
   }
 
-/* -----------------------------------*/
-/*          PARALLAX scrollbars       */
-/* -----------------------------------*/
 
-//  MAIN SCROLLBAR
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #3a3737;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 /* -----------------------------------*/
 /*          mediaqueries              */

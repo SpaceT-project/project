@@ -129,7 +129,7 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(32, 47, 76, 0.98);
+  background-color: rgba(27, 31, 43, 0.98);
 }
 .navSection .navBar .nav {
   display: grid;
@@ -149,10 +149,10 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
   transition: color 0.3s ease-in-out;
 }
 .navSection .navBar .nav > li a.active {
-  color: #fd7e14;
+  color: #EE7C62;
 }
 .navSection .navBar .nav > li a:hover {
-  color: #fd7e14;
+  color: #86392A;
 }
 
 @media (min-width: 768px) {
@@ -191,6 +191,29 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
   text-align: center;
 }
 
+/* -----------------------------------*/
+/*          scrollbar                 */
+/* -----------------------------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3a3737;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 #homeBody {
   color: #555;
   background-image: url(https://images.alphacoders.com/935/thumb-1920-935315.png);
@@ -198,6 +221,7 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
   text-align: center;
   font-family: "Roboto", sans-serif;
   padding: 1em;
+  overflow-x: hidden;
   /* Video Header */
   /* End Vidoe Header*/
   /* card */
@@ -220,11 +244,14 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
   margin-bottom: 5px;
   border: 3px solid #AAB3BA;
   border-radius: 0%;
+  overflow-x: hidden;
 }
 #homeBody .wrapper {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  border-radius: 2rem;
+  overflow-x: hidden;
 }
 #homeBody .wrapper .wrapper .wrapper__video {
   object-fit: cover;
@@ -294,13 +321,13 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
 }
 #homeBody .flip > .front p,
 #homeBody .flip > .back p {
-  color: #1B1F2B;
+  color: #1b1f2b;
   font-size: 0.9125rem;
   line-height: 160%;
 }
 #homeBody .flip > .front h2,
 #homeBody .flip > .back h2 {
-  color: #1B1F2B;
+  color: #1b1f2b;
   font-family: Typodermic, sans-serif;
 }
 #homeBody .text-shadow {
@@ -308,8 +335,9 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
 }
 
 #aboutBody {
-  background-color: #1B1F2B;
+  background-color: #1b1f2b;
   color: #fff;
+  overflow-x: hidden;
 }
 
 hr {
@@ -319,28 +347,27 @@ hr {
   box-shadow: 0 0.1rem 0.3rem #fff;
 }
 
-@font-face {
-  font-family: NasaFont;
-  src: url("../../fonts/Typodermic_-_NasalizationRg-Regular.otf");
-}
-* {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
 h1, h2, h3 {
-  font-family: NasaFont, serif;
+  font-family: Typodermic, sans-serif;
 }
 
 #vision {
   border-radius: 48%;
 }
 
+#vision-row p {
+  max-width: 50rem;
+}
+@media screen and (max-width: 676px) {
+  #vision-row {
+    flex-direction: column-reverse;
+  }
+}
+
 .tabs .tabLinks .tabLink {
-  font-family: NasaFont, sans-serif;
-  width: 12rem;
+  font-family: Typodermic, sans-serif;
+  min-width: 15rem;
+  max-width: 15rem;
   background: #37527F;
   border-style: none;
   border-top-right-radius: 40%;
@@ -352,6 +379,9 @@ h1, h2, h3 {
   padding: 0.5rem 0.7rem 0.3rem 0.7rem;
   margin: 0 auto;
   outline: none;
+}
+.tabs .tabLinks .tabLink img {
+  width: 3rem;
 }
 .tabs .tabLinks .tabLink:hover {
   opacity: 1;
@@ -366,7 +396,7 @@ h1, h2, h3 {
 }
 
 .tabContents {
-  background-color: #341615;
+  background-color: #1b1f2b;
   border: 0.3rem solid #37527F;
   margin: -0.2rem 0.4rem 0.2rem 0.4rem;
   margin-top: -0.2rem;
@@ -375,6 +405,7 @@ h1, h2, h3 {
 }
 
 .circle-image, .circle-image > img {
+  overflow-x: hidden;
   position: relative;
   height: 12rem;
   max-width: 12rem;
@@ -519,14 +550,15 @@ h1, h2, h3 {
   font-family: NasaFont, sans-serif;
 }
 
-#destination {
-  background: #000;
-}
-#destination .navSection .navDestination {
-  background: rgba(0, 0, 0, 0.5);
+#destinationBody {
+  overflow-y: hidden;
+  background-image: url("https://images.alphacoders.com/935/thumb-1920-935315.png");
+  background-repeat: no-repeat;
 }
 
 #destinations {
+  background-image: url("https://images.alphacoders.com/935/thumb-1920-935315.png");
+  background-repeat: no-repeat;
   /* -----------------------------------*/
   /*          CREATING PARALLAX         */
   /* -----------------------------------*/
@@ -536,15 +568,14 @@ h1, h2, h3 {
   /*          PARALLAX CONTENT          */
   /* -----------------------------------*/
   /* -----------------------------------*/
-  /*          PARALLAX scrollbars       */
-  /* -----------------------------------*/
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-  /* -----------------------------------*/
   /*          mediaqueries              */
   /* -----------------------------------*/
+}
+#destinations header {
+  background: transparent;
+}
+#destinations .navDestination, #destinations .navCtn {
+  background: #000;
 }
 #destinations .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
@@ -552,27 +583,24 @@ h1, h2, h3 {
   height: 100vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 2px;
-  background: #000;
 }
 #destinations .parallax-section {
+  overflow-x: hidden;
   overflow-y: hidden;
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  height: 120vh;
   /* For text formatting. */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fff;
   text-shadow: 0 0 5px #000;
 }
 #destinations .parallax::after {
-  overflow-y: hidden;
   /* Display and position the pseudo-element */
   content: " ";
   position: absolute;
@@ -621,6 +649,7 @@ h1, h2, h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 5rem;
 }
 #destinations h1 {
   font-family: "Typodermic";
@@ -673,18 +702,6 @@ h1, h2, h3 {
   text-decoration: none;
   color: #fff;
 }
-#destinations ::-webkit-scrollbar {
-  width: 10px;
-}
-#destinations ::-webkit-scrollbar-track {
-  background: #3a3737;
-}
-#destinations ::-webkit-scrollbar-thumb {
-  background: #888;
-}
-#destinations ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 @media only screen and (max-width: 568px) {
   #destinations h1 {
     font-size: 3rem;
@@ -704,17 +721,47 @@ h1, h2, h3 {
 #packagesBody {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  background: #1B1F2B;
+  background: #1b1f2b;
 }
 #packagesBody h1,
 #packagesBody h5 {
   font-family: Typodermic, sans-serif;
 }
-#packagesBody #packagesPage {
-  background-color: #1B1F2B;
+#packagesBody h1 {
+  text-shadow: 2px 2px 3px #ee7c62;
+  padding-bottom: 2rem;
+  font-size: 5rem;
+}
+#packagesBody .main-p {
+  font-size: 1.5rem;
+}
+#packagesBody .carousel-packages-preview {
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+}
+#packagesBody .carousel-packages-preview .carousel-inner {
+  border-radius: 3rem;
+}
+#packagesBody .carousel-packages-preview h2 {
+  text-shadow: 2px 2px 3px #ee7c62;
+  font-family: "Typodermic";
+  font-weight: 900;
   color: #fff;
-  padding: 10vh 10vw;
-  margin: 5vh 0;
+}
+#packagesBody .carousel-packages-preview img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+@media screen and (max-width: 468px) {
+  #packagesBody .carousel-packages-preview h2 {
+    font-size: 1.3rem;
+  }
+}
+#packagesBody #packagesPage {
+  background-color: #1b1f2b;
+  color: #fff;
+  padding: 5vh 1vw;
 }
 #packagesBody #packagesPage .cards-container {
   margin: 10vh 0;
@@ -731,8 +778,8 @@ h1, h2, h3 {
   border: none;
   overflow: hidden;
   background-color: #fff;
-  color: #1B1F2B;
-  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05);
+  color: #1b1f2b;
+  box-shadow: 0 0.5rem 1rem rgba(238, 124, 98, 0.5);
 }
 #packagesBody #packagesPage .cards-container .package-card .pkg-img-container {
   height: 15rem;
@@ -760,7 +807,7 @@ h1, h2, h3 {
   margin-right: 10px;
   font-size: 0.9rem;
   font-weight: 300;
-  color: #1B1F2B;
+  color: #1b1f2b;
 }
 #packagesBody #packagesPage .cards-container .package-card .pkg-content .pkg-btn {
   width: 100%;
@@ -799,30 +846,18 @@ h1, h2, h3 {
   margin-right: 10px;
 }
 
-.carrousel-packages-preview {
-  margin-bottom: 3rem;
-}
-.carrousel-packages-preview h2 {
-  font-family: "Typodermic";
-  font-weight: 900;
-  color: #fff;
-}
-.carrousel-packages-preview img {
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
-}
-@media screen and (max-width: 468px) {
-  .carrousel-packages-preview h2 {
-    font-size: 1.3rem;
-  }
-}
-
 #contactBody {
   /*main colors*/
   /* blue/purple-ish colors */
   /* red/clay-ish colors */
   /* gray/white-ish colors */
+  /* -----------------------------------*/
+  /*          scrollbar                 */
+  /* -----------------------------------*/
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
 #contactBody * {
   box-sizing: border-box;
@@ -951,7 +986,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(32, 47, 76, 0.98);
+  background-color: rgba(27, 31, 43, 0.98);
 }
 #contactBody .navSection .navBar .nav {
   display: grid;
@@ -971,10 +1006,10 @@ h1, h2, h3 {
   transition: color 0.3s ease-in-out;
 }
 #contactBody .navSection .navBar .nav > li a.active {
-  color: #fd7e14;
+  color: #EE7C62;
 }
 #contactBody .navSection .navBar .nav > li a:hover {
-  color: #fd7e14;
+  color: #86392A;
 }
 @media (min-width: 768px) {
   #contactBody .navSection .navBurger {
@@ -1011,8 +1046,20 @@ h1, h2, h3 {
   font-size: 5rem;
   text-align: center;
 }
+#contactBody ::-webkit-scrollbar {
+  width: 10px;
+}
+#contactBody ::-webkit-scrollbar-track {
+  background: #3a3737;
+}
+#contactBody ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+#contactBody ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 #contactBody .navSection {
-  background: #202F4C;
+  background: #1b1f2b;
 }
 #contactBody .contactPage {
   position: relative;
@@ -1022,7 +1069,7 @@ h1, h2, h3 {
   width: 100%;
   padding: 1rem;
   padding-top: 3rem;
-  background-color: #202F4C;
+  background-color: #1b1f2b;
   color: #fff;
 }
 #contactBody .contactPage .contactUs .logoCtn {

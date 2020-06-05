@@ -5,6 +5,10 @@
 #aboutBody {
   background-color: $clr-space-dark;
   color: $clr-white;
+  overflow-x: hidden;
+
+
+
 }
 
 hr {
@@ -17,23 +21,12 @@ hr {
 
 
 
+
 //for screen larger than smartphone
 
-@font-face {
-  font-family: NasaFont;
-  src: url('../../fonts/Typodermic_-_NasalizationRg-Regular.otf');
-}
-
-* {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-
-}
 
 h1, h2, h3 {
-  font-family: NasaFont, serif;
+  font-family: Typodermic, sans-serif;
 }
 
 
@@ -47,14 +40,26 @@ h1, h2, h3 {
   border-radius: 48%;
 }
 
+#vision-row{
+  p{
+    max-width: 50rem;
+  }
+
+  @media screen and (max-width: 676px){
+  flex-direction: column-reverse;
+}
+}
+
 
 // for tabs
 .tabs {
+
   .tabLinks {
 
     .tabLink {
-      font-family: NasaFont, sans-serif;
-      width: 12rem;
+      font-family: Typodermic, sans-serif;
+      min-width: 15rem;
+      max-width: 15rem;
       background: $clr-space-light;
       border-style: none;
       border-top-right-radius: 40%;
@@ -66,6 +71,9 @@ h1, h2, h3 {
       padding: 0.5rem 0.7rem 0.3rem 0.7rem;
       margin: 0 auto;
       outline: none;
+      img {
+        width: 3rem;
+      }
     }
 
     .tabLink:hover {
@@ -83,7 +91,7 @@ h1, h2, h3 {
 }
 
 .tabContents {
-  background-color: $clr-mars-dark;
+  background-color: $clr-space-dark;
   border: 0.3rem solid $clr-space-light;
   margin: -0.2rem 0.4rem 0.2rem 0.4rem;
   margin-top: -0.2rem;
@@ -96,7 +104,7 @@ h1, h2, h3 {
 // for rounded image bar
 
 .circle-image, .circle-image > img {
-
+  overflow-x: hidden;
   .hover-box {
     transition: .5s ease;
     opacity: 0;
