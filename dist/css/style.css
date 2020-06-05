@@ -144,7 +144,7 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
   margin-top: 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
   transition: color 0.3s ease-in-out;
 }
@@ -1001,7 +1001,7 @@ h1, h2, h3 {
   margin-top: 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
   transition: color 0.3s ease-in-out;
 }
