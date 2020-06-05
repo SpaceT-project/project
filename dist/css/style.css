@@ -16,6 +16,9 @@ footer, #contactBody footer {
   background-color: #000;
   padding: 80px 0;
 }
+footer .footer-widget, #contactBody footer .footer-widget {
+  max-width: 350px;
+}
 footer .footer-widget h3, #contactBody footer .footer-widget h3 {
   font-family: Typodermic, sans-serif;
   color: #AAB3BA;
@@ -26,66 +29,44 @@ footer .footer-widget h3, #contactBody footer .footer-widget h3 {
 footer .contact-link, #contactBody footer .contact-link {
   display: inline-block;
   width: 100%;
-  color: #333;
+  color: #AAB3BA;
 }
-footer .footer-social, #contactBody footer .footer-social {
-  margin-left: 2rem;
-}
-footer .footer-social ul, #contactBody footer .footer-social ul {
-  padding-left: 0;
-}
-footer .footer-social ul li, #contactBody footer .footer-social ul li {
+footer .footer-social li, #contactBody footer .footer-social li {
   list-style: none;
-  float: left;
-  padding: 0 10px;
 }
-footer .footer-social ul li:first-child, #contactBody footer .footer-social ul li:first-child {
+footer .footer-social li:first-child, #contactBody footer .footer-social li:first-child {
   padding-left: 0;
 }
-footer .footer-social ul li a, #contactBody footer .footer-social ul li a {
+footer .footer-social li a, #contactBody footer .footer-social li a {
   font-size: 20px;
-  color: #333;
+  color: #AAB3BA;
 }
-footer .footer-social ul li a:hover, #contactBody footer .footer-social ul li a:hover {
+footer .footer-social li a:hover, #contactBody footer .footer-social li a:hover {
   color: #EE7C62;
 }
-footer .pay-methods, #contactBody footer .pay-methods {
-  padding-left: 0;
-}
-footer .pay-methods li, #contactBody footer .pay-methods li {
-  list-style: none;
-}
-footer .pay-methods li span, #contactBody footer .pay-methods li span {
-  float: left;
-  padding-right: 10px;
-}
-footer .pay-methods li span .fa-times, #contactBody footer .pay-methods li span .fa-times {
+footer .pay-methods span .fa-times, #contactBody footer .pay-methods span .fa-times {
   color: #341615;
 }
-footer .pay-methods li strong, #contactBody footer .pay-methods li strong {
+footer .pay-methods strong, #contactBody footer .pay-methods strong {
   color: #341615;
+}
+footer .pay-methods i, #contactBody footer .pay-methods i {
+  font-size: 3rem;
+}
+footer .pay-methods i:hover, #contactBody footer .pay-methods i:hover {
+  color: #EE7C62;
 }
 footer .media-body a, #contactBody footer .media-body a {
-  color: #333;
+  color: #AAB3BA;
 }
 footer .media-body a:hover, #contactBody footer .media-body a:hover {
-  color: #341615;
+  color: #EE7C62;
 }
 footer .media-body span, #contactBody footer .media-body span {
-  color: #969696;
+  color: #AAB3BA;
 }
-footer .images-gellary ul, #contactBody footer .images-gellary ul {
-  padding-left: 0;
-}
-footer .images-gellary ul li, #contactBody footer .images-gellary ul li {
-  list-style: none;
-  float: left;
-  margin: 0 3% 2% 0;
-  width: 31%;
-  position: relative;
-}
-footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary ul li:nth-child(3n) {
-  margin: 0 0 1%;
+footer .images-gallary img, #contactBody footer .images-gallary img {
+  padding: 0;
 }
 
 .navSection {
@@ -882,6 +863,9 @@ h1, h2, h3 {
   background-color: #000;
   padding: 80px 0;
 }
+#contactBody footer .footer-widget, #contactBody footer .footer-widget {
+  max-width: 350px;
+}
 #contactBody footer .footer-widget h3, #contactBody footer .footer-widget h3 {
   font-family: Typodermic, sans-serif;
   color: #AAB3BA;
@@ -892,66 +876,44 @@ h1, h2, h3 {
 #contactBody footer .contact-link, #contactBody footer .contact-link {
   display: inline-block;
   width: 100%;
-  color: #333;
+  color: #AAB3BA;
 }
-#contactBody footer .footer-social, #contactBody footer .footer-social {
-  margin-left: 2rem;
-}
-#contactBody footer .footer-social ul, #contactBody footer .footer-social ul {
-  padding-left: 0;
-}
-#contactBody footer .footer-social ul li, #contactBody footer .footer-social ul li {
+#contactBody footer .footer-social li, #contactBody footer .footer-social li {
   list-style: none;
-  float: left;
-  padding: 0 10px;
 }
-#contactBody footer .footer-social ul li:first-child, #contactBody footer .footer-social ul li:first-child {
+#contactBody footer .footer-social li:first-child, #contactBody footer .footer-social li:first-child {
   padding-left: 0;
 }
-#contactBody footer .footer-social ul li a, #contactBody footer .footer-social ul li a {
+#contactBody footer .footer-social li a, #contactBody footer .footer-social li a {
   font-size: 20px;
-  color: #333;
+  color: #AAB3BA;
 }
-#contactBody footer .footer-social ul li a:hover, #contactBody footer .footer-social ul li a:hover {
+#contactBody footer .footer-social li a:hover, #contactBody footer .footer-social li a:hover {
   color: #EE7C62;
 }
-#contactBody footer .pay-methods, #contactBody footer .pay-methods {
-  padding-left: 0;
-}
-#contactBody footer .pay-methods li, #contactBody footer .pay-methods li {
-  list-style: none;
-}
-#contactBody footer .pay-methods li span, #contactBody footer .pay-methods li span {
-  float: left;
-  padding-right: 10px;
-}
-#contactBody footer .pay-methods li span .fa-times, #contactBody footer .pay-methods li span .fa-times {
+#contactBody footer .pay-methods span .fa-times, #contactBody footer .pay-methods span .fa-times {
   color: #341615;
 }
-#contactBody footer .pay-methods li strong, #contactBody footer .pay-methods li strong {
+#contactBody footer .pay-methods strong, #contactBody footer .pay-methods strong {
   color: #341615;
+}
+#contactBody footer .pay-methods i, #contactBody footer .pay-methods i {
+  font-size: 3rem;
+}
+#contactBody footer .pay-methods i:hover, #contactBody footer .pay-methods i:hover {
+  color: #EE7C62;
 }
 #contactBody footer .media-body a, #contactBody footer .media-body a {
-  color: #333;
+  color: #AAB3BA;
 }
 #contactBody footer .media-body a:hover, #contactBody footer .media-body a:hover {
-  color: #341615;
+  color: #EE7C62;
 }
 #contactBody footer .media-body span, #contactBody footer .media-body span {
-  color: #969696;
+  color: #AAB3BA;
 }
-#contactBody footer .images-gellary ul, #contactBody footer .images-gellary ul {
-  padding-left: 0;
-}
-#contactBody footer .images-gellary ul li, #contactBody footer .images-gellary ul li {
-  list-style: none;
-  float: left;
-  margin: 0 3% 2% 0;
-  width: 31%;
-  position: relative;
-}
-#contactBody footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary ul li:nth-child(3n) {
-  margin: 0 0 1%;
+#contactBody footer .images-gallary img, #contactBody footer .images-gallary img {
+  padding: 0;
 }
 #contactBody .navSection {
   padding: 0 1rem;
