@@ -73,6 +73,7 @@
 }
 /* Sets the actual background images */
 .bg1::after {
+  padding-top: 5rem;
   overflow-y: hidden;
   background-image: url("../images/Mars.jpg");
 }

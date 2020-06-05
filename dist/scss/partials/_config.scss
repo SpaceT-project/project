@@ -203,7 +203,7 @@ footer{
 //for navbar //
 @media (min-width: 768px) {
   .navSection {
-    background: transparent;
+    background: $clr-space-dark;
 
     .navBurger {
       display: none;
