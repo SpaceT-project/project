@@ -402,6 +402,7 @@ h1, h2, h3 {
   margin-top: -0.2rem;
   border-radius: 1rem;
   box-shadow: 0.2rem 0 0.5rem #AAB3BA;
+  min-width: 100%;
 }
 
 .circle-image, .circle-image > img {
@@ -480,6 +481,9 @@ h1, h2, h3 {
   width: 100%;
   overflow: hidden;
   background: #341615;
+}
+.crew-card .card-title {
+  font-family: Typodermic, sans-serif;
 }
 .crew-card .card-img-top {
   height: 12rem;

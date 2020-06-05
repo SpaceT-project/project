@@ -88,6 +88,7 @@ h1, h2, h3 {
   padding: 3rem;
   text-align: center;
   color: $clr-white;
+
 }
 
 .tabContents {
@@ -97,6 +98,7 @@ h1, h2, h3 {
   margin-top: -0.2rem;
   border-radius: 1rem;
   box-shadow: 0.2rem 0 0.5rem $clr-moon-light;
+  min-width: 100%;
 }
 
 
@@ -159,6 +161,7 @@ h1, h2, h3 {
 
 
 .crew-card {
+
   .container-dirk {
     @include card-img-style;
     background: $clr-moon-dark;
@@ -182,6 +185,9 @@ h1, h2, h3 {
   .container-vinnie {
     @include card-img-style;
     background: $clr-mars-dark;
+  }
+  .card-title{
+    font-family: Typodermic, sans-serif;
   }
 
   .card-img-top {
