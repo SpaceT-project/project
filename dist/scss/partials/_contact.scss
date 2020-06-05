@@ -1,3 +1,4 @@
+#contactBody{
 @import "config";
 $typodermic: 'Typodermic';
 
@@ -336,4 +337,5 @@ $typodermic: 'Typodermic';
 
 footer{
     @extend footer;
+}
 }

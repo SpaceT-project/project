@@ -37,7 +37,11 @@ footer{
   padding: 80px 0;
   .footer-widget{
     h3{
+      font-family: Typodermic, sans-serif;
+      color: $clr-moon-light;
       margin-bottom: 30px;
+      white-space: wrap;
+      font-size: 1.5rem;
     }
   }
   .contact-link{
@@ -47,6 +51,7 @@ footer{
   }
   // footer social
   .footer-social{
+    margin-left: 2rem;
     ul{
       padding-left: 0;
       li{
@@ -60,7 +65,7 @@ footer{
           font-size: 20px;
           color: #333;
           &:hover{
-            color: $clr-mars-dark;
+            color: $clr-mars-light;
           }
         }
       }
@@ -121,7 +126,7 @@ footer{
 .navSection {
   padding: 0 1rem;
   border:none;
-  background: transparent;
+
 
   .navMenu {
     position: relative; //to set the position for navBurger as absolute
@@ -203,7 +208,7 @@ footer{
 //for navbar //
 @media (min-width: 768px) {
   .navSection {
-    background: $clr-space-dark;
+
 
     .navBurger {
       display: none;
