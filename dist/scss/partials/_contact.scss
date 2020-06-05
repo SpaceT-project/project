@@ -175,9 +175,7 @@ $typodermic: 'Typodermic';
         right: 1rem;
         width: 50px;
         height: 50px;
-        border-radius: 50%;
-        background-color: $clr-white;
-        color: $clr-space-light;
+        color: $clr-mars-light;
         cursor: pointer;
         overflow-y: hidden;
 
@@ -196,8 +194,9 @@ $typodermic: 'Typodermic';
         }
 
         &:hover {
-            box-shadow: 0 0 2px 2px $clr-mars-light;
-            color: $clr-mars-light;
+            @include transition-ease();
+            font-size: 1.1rem;
+            color: lighten($color: #EE7C62, $amount: 20%);
         }
     }
 
@@ -311,6 +310,8 @@ $typodermic: 'Typodermic';
                 z-index: 1;
 
                 &:hover {
+                    @include transition-ease();
+                    font-size: 1.2rem;
                     color: $clr-mars-light;
                 }
             }
