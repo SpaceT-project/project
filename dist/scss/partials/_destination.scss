@@ -1,7 +1,5 @@
 #destinations{
 
-
-
 /* -----------------------------------*/
 /*          CREATING PARALLAX         */
 /* -----------------------------------*/
@@ -20,6 +18,7 @@
 }
 
 .parallax-section {
+  overflow-y: hidden;
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
@@ -34,6 +33,7 @@
 }
 
 .parallax::after {
+  overflow-y: hidden;
   /* Display and position the pseudo-element */
   content: " ";
   position: absolute;
@@ -73,6 +73,7 @@
 }
 /* Sets the actual background images */
 .bg1::after {
+  overflow-y: hidden;
   background-image: url("../images/Mars.jpg");
 }
 
@@ -149,6 +150,11 @@ h3 {
   margin-bottom: 2rem;
   margin-right: 1rem;
 }
+
+  .fact button a{
+    text-decoration: none;
+    color: $clr-white;
+  }
 
 /* -----------------------------------*/
 /*          PARALLAX scrollbars       */

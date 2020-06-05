@@ -119,6 +119,8 @@ footer{
 
 .navSection {
   padding: 0 1rem;
+  border:none;
+  background: transparent;
 
   .navMenu {
     position: relative; //to set the position for navBurger as absolute
@@ -200,7 +202,7 @@ footer{
 //for navbar //
 @media (min-width: 768px) {
   .navSection {
-    background: none;
+    background: transparent;
 
     .navBurger {
       display: none;
@@ -235,5 +237,18 @@ footer{
         }
       }
     }
+  }
+}
+
+
+// Coming Soon
+#comingSoon{
+  section{
+    margin-top: 40vh;
+  }
+
+  h1{
+    font-size: 5rem;
+    text-align: center;
   }
 }

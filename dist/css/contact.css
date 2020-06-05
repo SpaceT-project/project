@@ -1,18 +1,16 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +19,6 @@ body {
   font-family: "Typodermic";
   src: url("../fonts/Typodermic.otf") format("opentype");
 }
-
 /*main colors*/
 /* blue/purple-ish colors */
 /* red/clay-ish colors */
@@ -30,77 +27,60 @@ footer {
   background-color: #000;
   padding: 80px 0;
 }
-
 footer .footer-widget h3 {
   margin-bottom: 30px;
 }
-
 footer .contact-link {
   display: inline-block;
   width: 100%;
   color: #333;
 }
-
 footer .footer-social ul {
   padding-left: 0;
 }
-
 footer .footer-social ul li {
   list-style: none;
   float: left;
   padding: 0 10px;
 }
-
 footer .footer-social ul li:first-child {
   padding-left: 0;
 }
-
 footer .footer-social ul li a {
   font-size: 20px;
   color: #333;
 }
-
 footer .footer-social ul li a:hover {
   color: #341615;
 }
-
 footer .pay-methods {
   padding-left: 0;
 }
-
 footer .pay-methods li {
   list-style: none;
 }
-
 footer .pay-methods li span {
   float: left;
   padding-right: 10px;
 }
-
 footer .pay-methods li span .fa-times {
   color: #341615;
 }
-
 footer .pay-methods li strong {
   color: #341615;
 }
-
 footer .media-body a {
   color: #333;
 }
-
 footer .media-body a:hover {
   color: #341615;
 }
-
 footer .media-body span {
   color: #969696;
 }
-
 footer .images-gellary ul {
   padding-left: 0;
 }
-
 footer .images-gellary ul li {
   list-style: none;
   float: left;
@@ -108,28 +88,25 @@ footer .images-gellary ul li {
   width: 31%;
   position: relative;
 }
-
 footer .images-gellary ul li:nth-child(3n) {
   margin: 0 0 1%;
 }
 
 .navSection {
   padding: 0 1rem;
+  border: none;
+  background: transparent;
 }
-
 .navSection .navMenu {
   position: relative;
 }
-
 .navSection .navBrand {
   height: 4rem;
   padding: 0.5rem 0;
 }
-
 .navSection .navBrand img {
   max-height: 100%;
 }
-
 .navSection .navBurger {
   font-size: 1.5rem;
   position: absolute;
@@ -138,15 +115,12 @@ footer .images-gellary ul li:nth-child(3n) {
   z-index: 2;
   cursor: pointer;
 }
-
 .navSection .navBurger .navBurgerBtn {
   color: #fff;
 }
-
 .navSection .navBurger:hover .navBurgerBtn {
   color: #EE7C62;
 }
-
 .navSection .navBar {
   position: absolute;
   top: 0;
@@ -156,63 +130,46 @@ footer .images-gellary ul li:nth-child(3n) {
   height: 100vh;
   display: none;
 }
-
 .navSection .navBar.open {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(32, 47, 76, 0.98);
 }
-
 .navSection .navBar .nav {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
-
 .navSection .navBar .nav > li {
   list-style-type: none;
   text-align: center;
   padding: 0.5rem;
 }
-
 .navSection .navBar .nav > li a {
   margin-top: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-size: 1.5rem;
-  -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-
 .navSection .navBar .nav > li a.active {
   color: #fd7e14;
 }
-
 .navSection .navBar .nav > li a:hover {
   color: #fd7e14;
 }
 
 @media (min-width: 768px) {
   .navSection {
-    background: none;
+    background: transparent;
   }
   .navSection .navBurger {
     display: none;
   }
   .navSection .navCtn {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
   }
   .navSection .navBar {
     text-align: right;
@@ -222,16 +179,10 @@ footer .images-gellary ul li:nth-child(3n) {
     display: block;
   }
   .navSection .navBar .nav {
-    margin-top: .8rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    margin-top: 0.8rem;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: flex-end;
+    align-items: center;
     margin-left: auto;
   }
   .navSection .navBar .nav > li a {
@@ -240,12 +191,18 @@ footer .images-gellary ul li:nth-child(3n) {
     padding-left: 0.5rem;
   }
 }
+#comingSoon section {
+  margin-top: 40vh;
+}
+#comingSoon h1 {
+  font-size: 5rem;
+  text-align: center;
+}
 
 .contactPage {
   position: relative;
   font-family: "Roboto", sans-serif;
 }
-
 .contactPage .contactUs {
   width: 100%;
   padding: 1rem;
@@ -253,35 +210,29 @@ footer .images-gellary ul li:nth-child(3n) {
   background-color: #202F4C;
   color: #fff;
 }
-
 .contactPage .contactUs .logoCtn {
   width: 100%;
   text-align: center;
 }
-
 .contactPage .contactUs .logoCtn .logo {
   width: 50px;
   margin: 0 auto;
   margin-bottom: 0.5rem;
 }
-
 .contactPage .contactUs .sayHello {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 3rem;
 }
-
 .contactPage .contactUs .sayHello .p1 {
   text-transform: uppercase;
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
-
 .contactPage .contactUs .sayHello .p1 .big {
   font-size: 1rem;
 }
-
 .contactPage .contactUs .sayHello h1 {
   color: #EE7C62;
   font-family: "Typodermic";
@@ -290,17 +241,14 @@ footer .images-gellary ul li:nth-child(3n) {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
-
 .contactPage .contactUs .sayHello .p2 {
   font-size: 1rem;
   padding: 0 1rem;
   margin-bottom: 0.5rem;
 }
-
 .contactPage .contactUs .contactMethods .contactFormCtn {
   margin-bottom: 3rem;
 }
-
 .contactPage .contactUs .contactMethods .contactFormCtn input, .contactPage .contactUs .contactMethods .contactFormCtn button, .contactPage .contactUs .contactMethods .contactFormCtn select, .contactPage .contactUs .contactMethods .contactFormCtn label, .contactPage .contactUs .contactMethods .contactFormCtn textarea {
   padding: 0.5rem;
   display: block;
@@ -311,41 +259,31 @@ footer .images-gellary ul li:nth-child(3n) {
   border: none;
   outline: none;
 }
-
 .contactPage .contactUs .contactMethods .contactFormCtn label {
   padding-left: 0;
   padding-bottom: 0;
   margin-bottom: 0.5rem;
 }
-
 .contactPage .contactUs .contactMethods .contactFormCtn input:focus, .contactPage .contactUs .contactMethods .contactFormCtn textarea:focus {
   border-color: #EE7C62;
-  -webkit-box-shadow: 0 0 2px 2px #EE7C62;
-          box-shadow: 0 0 2px 2px #EE7C62;
-  -webkit-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 2px 2px #EE7C62;
   transition: all 0.2s ease-in-out;
 }
-
 .contactPage .contactUs .contactMethods .contactFormCtn button {
   background-color: #EE7C62;
   color: #fff;
   cursor: pointer;
 }
-
 .contactPage .contactUs .contactMethods .contactFormCtn button:hover {
   font-weight: bold;
   border-color: #EE7C62;
-  -webkit-box-shadow: 0 0 2px 2px #EE7C62;
-          box-shadow: 0 0 2px 2px #EE7C62;
-  -webkit-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 2px 2px #EE7C62;
   transition: all 0.2s ease-in-out;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn {
   width: 80%;
   margin: 0 auto;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn h4 {
   color: #EE7C62;
   font-size: 1.5rem;
@@ -354,83 +292,66 @@ footer .images-gellary ul li:nth-child(3n) {
   font-family: Typodermic, sans-serif;
   text-transform: uppercase;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem {
   width: 80%;
   margin: 0 auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 9fr;
-      grid-template-columns: 1fr 9fr;
+  grid-template-columns: 1fr 9fr;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem p {
   padding: 0.5rem;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .icon {
   width: 40px;
   text-align: center;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .emailUs, .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem .callUs {
   text-decoration: none;
   color: inherit;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .infoItems .infoItem:hover {
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #EE7C62;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .map {
   text-align: center;
   padding-bottom: 1rem;
 }
-
 .contactPage .contactUs .contactMethods .contactInfo .contactInfoCtn .map iframe {
   border: none;
   border-radius: 5px;
   max-width: 100%;
 }
-
 .contactPage .directChatIcon {
   position: fixed;
   bottom: 2rem;
   right: 1rem;
   width: 50px;
   height: 50px;
-  color: #EE7C62;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #37527F;
   cursor: pointer;
   overflow-y: hidden;
 }
-
 .contactPage .directChatIcon .iconCtn {
   overflow: hidden;
 }
-
 .contactPage .directChatIcon #commentIcon {
   margin: 0.5rem 0 0 0.3rem;
 }
-
 .contactPage .directChatIcon #timesIcon {
   margin: 0.6rem 0 0 0.8rem;
 }
-
 .contactPage .directChatIcon:hover {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  font-size: 1.1rem;
-  color: #f8c9be;
+  box-shadow: 0 0 2px 2px #EE7C62;
+  color: #EE7C62;
 }
-
 .contactPage .chatroom {
   z-index: 3;
   width: 350px;
@@ -442,11 +363,9 @@ footer .images-gellary ul li:nth-child(3n) {
   border: 2px solid #37527F;
   display: none;
 }
-
 .contactPage .chatroom.open {
   display: block;
 }
-
 .contactPage .chatroom .chatroomHeader {
   border-radius: 2px 2px 0 0;
   padding: 0.5rem;
@@ -454,67 +373,53 @@ footer .images-gellary ul li:nth-child(3n) {
   background-color: #37527F;
   color: #fff;
 }
-
 .contactPage .chatroom .chatroomHeader .circle {
   font-size: 0.8rem;
   color: #13be13;
 }
-
 .contactPage .chatroom .chatItems {
   background-color: #fff;
   font-size: 1rem;
   height: 250px;
 }
-
 .contactPage .chatroom .chatItems .chatItem-spaceT, .contactPage .chatroom .chatItems .chatItem-user {
   margin: 0.2rem;
   padding: 0.5rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 5fr;
-      grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr;
 }
-
 .contactPage .chatroom .chatItems .chatItem-spaceT .logoCtn, .contactPage .chatroom .chatItems .chatItem-user .logoCtn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #37527F;
 }
-
 .contactPage .chatroom .chatItems .chatItem-spaceT .logoCtn img, .contactPage .chatroom .chatItems .chatItem-user .logoCtn img {
   max-width: 100%;
 }
-
 .contactPage .chatroom .chatItems .chatItem-spaceT .chatMsg, .contactPage .chatroom .chatItems .chatItem-user .chatMsg {
   padding: 0.5rem;
   border-radius: 5px;
   background-color: #37527F;
   color: #fff;
 }
-
 .contactPage .chatroom .chatItems .chatItem-user {
-  -ms-grid-columns: 5fr 1fr;
-      grid-template-columns: 5fr 1fr;
+  grid-template-columns: 5fr 1fr;
 }
-
 .contactPage .chatroom .chatItems .chatItem-user .chatMsg {
   background-color: #fff;
   color: #202F4C;
   border: 1px solid #37527F;
 }
-
 .contactPage .chatroom .chatItems .chatItem-user .userIcon {
   color: #EE7C62;
   margin-left: 1rem;
 }
-
 .contactPage .chatroom .chatForm {
   border-top: 1px solid #ddd;
   border-radius: 5px;
   position: relative;
 }
-
 .contactPage .chatroom .chatForm input, .contactPage .chatroom .chatForm button {
   padding: 0.5rem;
   height: 3rem;
@@ -522,20 +427,15 @@ footer .images-gellary ul li:nth-child(3n) {
   border: none;
   outline: none;
 }
-
 .contactPage .chatroom .chatForm input {
   width: 100%;
   font-size: 1rem;
   padding-right: 4rem;
 }
-
 .contactPage .chatroom .chatForm input:focus {
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  -webkit-box-shadow: 0 0 2px 2px #37527F;
-          box-shadow: 0 0 2px 2px #37527F;
+  box-shadow: 0 0 2px 2px #37527F;
 }
-
 .contactPage .chatroom .chatForm button {
   background-color: #37527F;
   color: #fff;
@@ -546,36 +446,26 @@ footer .images-gellary ul li:nth-child(3n) {
   top: 0;
   z-index: 1;
 }
-
 .contactPage .chatroom .chatForm button:hover {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  font-size: 1.2rem;
   color: #EE7C62;
 }
 
 @media (min-width: 768px) {
   .contactPage .contactUs .contactMethods {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 .navSection {
   padding: 0 1rem;
 }
-
 .navSection .navMenu {
   position: relative;
 }
-
 .navSection .navBrand a {
   color: black;
   text-decoration: none;
 }
-
 .navSection .navBurger {
   font-size: 1.2rem;
   position: absolute;
@@ -584,7 +474,6 @@ footer .images-gellary ul li:nth-child(3n) {
   z-index: 2;
   cursor: pointer;
 }
-
 .navSection .navBar {
   position: absolute;
   top: 0;
@@ -594,39 +483,27 @@ footer .images-gellary ul li:nth-child(3n) {
   height: 100vh;
   display: none;
 }
-
 .navSection .navBar.open {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(73, 80, 87, 0.98);
 }
-
 .navSection .navBar .nav > li {
   list-style-type: none;
   text-align: center;
   padding: 0.5rem 0;
 }
-
 .navSection .navBar .nav > li a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-size: 1.5rem;
-  -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-
 .navSection .navBar .nav > li a.active {
   color: #fd7e14;
 }
-
 .navSection .navBar .nav > li a:hover {
   color: #fd7e14;
 }
@@ -636,10 +513,8 @@ footer .images-gellary ul li:nth-child(3n) {
     display: none;
   }
   .navSection .navCtn {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
   }
   .navSection .navBrand {
     padding: 0.5rem 0;
@@ -660,4 +535,5 @@ footer .images-gellary ul li:nth-child(3n) {
     padding: 0 0.2rem;
   }
 }
+
 /*# sourceMappingURL=contact.css.map */
