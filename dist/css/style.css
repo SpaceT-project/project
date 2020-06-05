@@ -91,6 +91,7 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
 .navSection {
   padding: 0 1rem;
   border: none;
+  font-weight: 500;
 }
 .navSection .navMenu {
   position: relative;
@@ -130,6 +131,8 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
   justify-content: center;
   align-items: center;
   background-color: rgba(27, 31, 43, 0.98);
+  font-weight: 500;
+  font-size: 1rem;
 }
 .navSection .navBar .nav {
   display: grid;
@@ -147,6 +150,7 @@ footer .images-gellary ul li:nth-child(3n), #contactBody footer .images-gellary 
   color: #fff;
   font-size: 1.5rem;
   transition: color 0.3s ease-in-out;
+  font-weight: 500;
 }
 .navSection .navBar .nav > li a.active {
   color: #EE7C62;
@@ -952,6 +956,7 @@ h1, h2, h3 {
 #contactBody .navSection {
   padding: 0 1rem;
   border: none;
+  font-weight: 500;
 }
 #contactBody .navSection .navMenu {
   position: relative;
@@ -991,6 +996,8 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   background-color: rgba(27, 31, 43, 0.98);
+  font-weight: 500;
+  font-size: 1rem;
 }
 #contactBody .navSection .navBar .nav {
   display: grid;
@@ -1008,6 +1015,7 @@ h1, h2, h3 {
   color: #fff;
   font-size: 1.5rem;
   transition: color 0.3s ease-in-out;
+  font-weight: 500;
 }
 #contactBody .navSection .navBar .nav > li a.active {
   color: #EE7C62;
